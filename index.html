@@ -1,0 +1,33 @@
+---
+layout: default
+title: Richard Huang's Website
+---
+{% for post in site.posts limit:5 %}
+  <div class="full">
+    <h1 class="entry-title">
+      <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+    </h1>
+    <div class="entry-content full-content">
+      {{ post.content }}
+      <div class="clear"></div>
+    </div>
+    <p class="alt-font tight">
+      Posted in
+      {% for category in post.categories %}
+        <a href="/{{ category }}.html"> {{ category }}</a>
+      {% endfor %}
+    </p>
+    <p class="comments-link">
+      <a href="#" title="Comment on {{ pst.title }}">comments</a>
+    </p>
+    <p class="by-line">
+      <span class="date full-date">
+        <abbr class="published" title="{{ post.date }}">{{ post.date | date_to_string }}</abbr>
+      </span>
+    </p>
+    <div class="clear"></div>
+  </div>
+  <div class="rule">
+    <hr/>
+  </div>
+{% endfor %}

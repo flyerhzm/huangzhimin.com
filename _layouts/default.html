@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Richard Huang - {{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+  </head>
+
+  <body>
+    <div id="header" class="section">
+      <div class="wrapper">
+        <strong id="blog-title">
+          <a href="/" rel="home">Richard Huang's Website</a>
+        </strong>
+        <p id="blog-description"></p>
+        <div id="navigation">
+          <ul class="nav clearfix">
+            <li class="first-child"><a href="/blog.html">Blog</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="main" class="section">
+      <div class="wrapper">
+        <div id="content">
+          {{ content }}
+        </div>
+        <div id="sidebar">
+          <div id="carrington-subscribe" class="widget">
+            <h2 class="widget-title">Subscribe</h2>
+            <a class="feed alignright" title="RSS 2.0 feed for posts" rel="alternate" href="#">
+              <img src="/images/rss-button.gif" alt="latest posts" title="latest posts">
+            </a>
+          </div>
+          <div id="carrington-about" class="widget">
+            <div class="about">
+              <h2 class="widget-title">About</h2>
+              I'm Richard Huang
+              <a class="more" href="/about">more →</a>
+            </div>
+          </div>
+          <div id="primary-sidebar">
+            <div class="widget">
+              <h2 class="widget-title">Archives</h2>
+              <ul>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div id="secondary-sidebar">
+            <div class="widget">
+              <h2 class="widget-title">Recent Posts</h2>
+              <ul>
+              </ul>
+              <div class="clear"></div>:
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="section">
+      <div class="wrapper">
+        <a id="generator-link">
+          Proudly powered by
+          <a href="https://github.com/mojombo/jekyll" rel="generator">Jekyll</a>
+          and
+          <a href="http://carringtontheme.com" title="Carrington theme for WordPress">Carrington</a>
+      </div>
+      <div id="developer-link">
+      </div>
+    </div>
+  </body>
+</html>
