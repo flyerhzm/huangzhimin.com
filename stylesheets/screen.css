@@ -194,7 +194,7 @@ dd,
 	margin-bottom:9px;
 }
 ul li {
-	background: url(../img/arrow-bullet.gif) no-repeat left top;
+	background: url(/images/arrow-bullet.gif) no-repeat left top;
 	list-style:none;
 	padding-left:12px;
 }
