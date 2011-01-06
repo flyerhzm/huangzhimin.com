@@ -1,3 +1,27 @@
 ---
 layout: default
 ---
+<div class="full">
+  <h1 class="entry-title">
+    <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
+  </h1>
+  <div class="entry-content full-content">
+    {{ page.content }}
+    <div class="clear"></div>
+  </div>
+  <p class="alt-font tight">
+    Posted in
+    {% for category in page.categories %}
+      <a href="#" name="{{ category }}"> {{ category }}</a>
+    {% endfor %}
+  </p>
+  <p class="by-line">
+    <span class="date full-date">
+      <abbr class="published" title="{{ page.date }}">{{ page.date | date_to_string }}</abbr>
+    </span>
+  </p>
+  <div class="clear"></div>
+</div>
+<div class="rule">
+  <hr/>
+</div>
