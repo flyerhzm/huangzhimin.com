@@ -3,7 +3,6 @@ layout: post
 title: default_scope影响attribute的default值
 categories:
 - Rails
-- Rails源码
 - ActiveRecord
 ---
 之前有个需求，发表的文章需要审核之后才能显示，于是在Post类中加了一个default_scope

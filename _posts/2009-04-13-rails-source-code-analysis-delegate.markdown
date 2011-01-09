@@ -2,7 +2,7 @@
 layout: post
 title: Rails源码分析——delegate
 categories:
-- Rails源码分析
+- Rails
 ---
 Delegate是一种应用composite来代替extend的机制，可以有效地降低代码的耦合性。
 
