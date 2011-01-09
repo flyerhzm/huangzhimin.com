@@ -12,13 +12,13 @@ title: Richard Huang's Website
       <div class="clear"></div>
     </div>
     <p class="alt-font tight">
-      Posted in
+      Posted in&nbsp;
       {% for category in post.categories %}
-        <a href="#" name="{{ category }}"> {{ category }}</a>
+        <a href="#" title="{{ category }}" rel="category tag"> {{ category }}</a>
       {% endfor %}
     </p>
     <p class="comments-link">
-      <a href="#" title="Comment on {{ pst.title }}">comments</a>
+      <a href="#" title="Comment on {{ post.title }}">comments</a>
     </p>
     <p class="by-line">
       <span class="date full-date">
