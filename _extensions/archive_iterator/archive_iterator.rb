@@ -6,7 +6,7 @@ module Jekyll
       hash.each do |month, days|
         monthly_archives << {
           'name'  => "#{Date::MONTHNAMES[month]} #{year}",
-          'url'   => "#{year}/#{month}",
+          'url'   => "%04d/%02d" % [year.to_s, month.to_s],
           'posts' => days.values.flatten
         }
       end
