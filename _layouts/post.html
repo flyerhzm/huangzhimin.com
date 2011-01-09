@@ -10,9 +10,9 @@ layout: default
     <div class="clear"></div>
   </div>
   <p class="alt-font tight">
-    Posted in
+    Posted in&nbsp;
     {% for category in page.categories %}
-      <a href="#" name="{{ category }}"> {{ category }}</a>
+    <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
     {% endfor %}
   </p>
   <p class="by-line">

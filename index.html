@@ -14,7 +14,7 @@ title: Richard Huang's Website
     <p class="alt-font tight">
       Posted in&nbsp;
       {% for category in post.categories %}
-        <a href="#" title="{{ category }}" rel="category tag"> {{ category }}</a>
+      <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
       {% endfor %}
     </p>
     <p class="comments-link">

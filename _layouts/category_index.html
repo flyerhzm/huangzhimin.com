@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<h1 class="page-title">
+  Category Archives:&nbsp;
+  <a href="/categories/{{page.category}}">{{page.category}}</a>
+</h1>
+<ol class="archive">
+{% for post in site.categories[page.category] %}
+  <li>
+    <div class="excerpt">
+      <strong class="entry-title">
+        <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+      </strong>
+      <span class="date small">
+        <abbr class="published" title="{{ post.date }}">{{ post.date | date_to_string }}</abbr>
+      </span>
+      <p class="alt-font">
+        Posted in&nbsp;
+        {% for category in post.categories %}
+        <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
+        {% endfor %}
+      </p>
+      <p class="comments-link">
+        <a href="#" title="Comment on {{ post.title }}">comments</a>
+      </p>
+    </div>
+  </li>
+{% endfor %}
+</ol>

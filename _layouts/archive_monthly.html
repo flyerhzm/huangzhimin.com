@@ -18,7 +18,7 @@ layout: default
           <p class="alt-font">
             Posted in&nbsp;
             {% for category in post.categories %}
-              <a href="#" title="{{ category }}" rel="category tag"> {{ category }}</a>
+            <a href="/categories/{{ category }}" title="{{ category }}" rel="category tag">{{ category }}</a>
             {% endfor %}
           </p>
           <p class="comments-link">

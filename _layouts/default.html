@@ -47,7 +47,7 @@
               <h2 class="widget-title">Categories</h2>
               <ul>
                 {% for category in site.categories %}
-                <li><a href="/{{category | first}}.html">{{category | first}} ({{category | last | size }})</a></li>
+                <li><a href="/categories/{{category | first}}">{{category | first}} ({{category | last | size }})</a></li>
                 {% endfor %}
               </ul>
             </div>
