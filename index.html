@@ -2,7 +2,7 @@
 layout: default
 title: Richard Huang's Website
 ---
-{% for post in paginator.posts %}
+{% for post in site.posts limit:1 %}
   <div class="full">
     <h1 class="entry-title">
       <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
@@ -31,19 +31,8 @@ title: Richard Huang's Website
 {% endfor %}
 
 <div class="pagination">
-  <span class="previous">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-      <a href="/index.html" title="Previous Page">&laquo; Previous</a>
-      {% else %}
-      <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
-      {% endif %}
-    {% endif %}
-  </span>
   <span class="next">
-    {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
-    {% endif %}
+    <a href="/blog.html" title="more posts">more →</a>
   </span>
 </div>
 
