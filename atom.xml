@@ -14,7 +14,7 @@ layout: nil
    <email>flyerhzm@gmail.com</email>
  </author>
 
- {% for post in site.posts %}
+ {% for post in site.posts limit:50 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://www.huangzhimin.com{{ post.url }}"/>
