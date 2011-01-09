@@ -123,14 +123,6 @@ h6 a:hover {
 	color: #a00004;
 	text-decoration: none;
 }
-/* elements with title attribute */
-abbr[title],
-acronym[title],
-dfn[title],
-span[title],
-del[title] {
-	cursor: help;
-}
 /* typogrify: inset initial double quotes. */
 .dquo {
 	margin-left: -.45em;
@@ -652,7 +644,7 @@ a.page-numbers {
 	margin-top:18px;
 }
 .excerpt {
-	background: url(../img/arrow-bullet.gif) no-repeat 0 12px;
+	background: url(/images/arrow-bullet.gif) no-repeat 0 12px;
 	border-bottom: 1px dotted #cecfd1;
 	color: #999;
 	padding: 12px 146px 12px 20px;

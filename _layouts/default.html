@@ -44,13 +44,21 @@
           </div>
           <div id="primary-sidebar">
             <div class="widget">
+              <h2 class="widget-title">Categories</h2>
+              <ul>
+                {% for category in site.categories %}
+                <li><a href="/{{category | first}}.html">{{category | first}} ({{category | last | size }})</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="widget">
               <h2 class="widget-title">Archives</h2>
               <ul>
-              {% for monthly_archive in site.monthly_archives reversed %}
+                {% for monthly_archive in site.monthly_archives reversed %}
                 <li>
                   <a href="{{ site.baseurl }}/{{ monthly_archive.url }}">{{ monthly_archive.name }}</a> ({{ monthly_archive.posts | size }} posts)
                 </li>
-              {% endfor %}
+                {% endfor %}
               </ul>
               <div class="clear"></div>
             </div>
