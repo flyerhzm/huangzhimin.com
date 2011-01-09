@@ -602,7 +602,7 @@ h1.page-title {
 .full .full-content {
 	clear:both;
 	padding-top: 9px;
-	width: 510px;
+	width: 550px;
 }
 .full .pages-link,
 .page-numbers {
@@ -927,7 +927,7 @@ a#TB_next:hover {
 }
 .pagination,
 .pagination-single {
-	background-image:url(../img/grey-to-white-gradient.png);
+	background-image:url(/images/grey-to-white-gradient.png);
 	background-repeat:repeat-x;
 	background-position:left top;
 }
