@@ -1031,6 +1031,24 @@ body#attachment #header .wrapper {
 	background-position:center bottom;
 }
 
+/* Projects
+ * ================================ */
+.full p.repostats-link {
+  float:right;
+  margin-top: 5px;
+}
+.full .repostats-link a.watchers {
+  background: url(/images/repostat_watchers.png) no-repeat 0 -6px;
+  padding: 1px 0 0 20px;
+}
+.full .repostats-link a.forks {
+  background: url(/images/repostat_forks.png) no-repeat 0 -6px;
+  padding: 1px 0 0 20px;
+}
+h1.repo-title { margin-bottom: 0; }
+.full .repo-content { padding: 0 0 9px 0; }
+
+
 /* Highlight
  * ================================ */
 .highlight  { background: #ffffff; }
