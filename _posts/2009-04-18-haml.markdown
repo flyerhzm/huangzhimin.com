@@ -1,0 +1,138 @@
+---
+layout: post
+title: haml
+categories:
+- Rails Plugins
+---
+最近做公司的项目，接触到了haml。真是耳目一新，语法太简洁了，页面代码量也少了，也不会出现标签不匹配的问题了，用起来非常爽！下面我来介绍如何在rails中使用haml
+
+1\. 创建测试工程：
+
+{% highlight bash %}
+$rails test_haml
+$cd test_haml
+{% endhighlight %}
+
+2\. 生成post模型：
+
+{% highlight bash %}
+$script/generate scaffold post title:string content:text
+$rake db:migrate
+{% endhighlight %}
+
+3\. 安装haml插件：
+
+{% highlight bash %}
+$script/plugin install git://github.com/nex3/haml.git
+{% endhighlight %}
+
+4\. 修改view文件的erb为haml：
+
+{% highlight haml %}
+# app/views/layouts/posts.html.haml
+!!! XML
+!!!
+%html{html_attrs('en')}
+  %head
+    %meta{'http-equiv' = 'content-type', :content = 'text/html;charset=UTF-8'}
+    %title= Posts: #{controller.action_name}
+    = javascript_include_tag :defaults
+  %body
+    %p{:style = color: green}= flash[:notice]
+    = yield
+{% endhighlight %}
+
+{% highlight haml %}
+# app/views/posts/index.html.haml
+%h1 Listing posts
+
+%table
+  %tr
+    %th Title
+    %th Content
+
+  - @posts.each do |post|
+    %tr
+      %td=h post.title
+      %td=h post.content
+      %td= link_to 'Show', post
+      %td= link_to 'Edit', edit_post_path(post)
+      %td= link_to 'Destroy', post, :confirm = 'Are you sure?', :method = :delete
+%br
+
+= link_to 'New post', new_post_path
+{% endhighlight %}
+
+{% highlight haml %}
+# app/views/posts/show.html.haml
+%p
+  %b Title:
+  =h @post.title
+
+%p
+  %b Content:
+  =h @post.content
+
+= link_to 'Edit', edit_post_path(@post)
+=  |
+= link_to 'Back', posts_path
+{% endhighlight %}
+
+{% highlight haml %}
+# app/views/posts/new.html.haml
+%h1 New post
+
+- form_for(@post) do |f|
+  = f.error_messages
+
+  %p
+    = f.label :title
+    %br
+    = f.text_field :title
+
+  %p
+    = f.label :content
+    %br
+    = f.text_area :content
+
+  %p
+    = f.submit 'Create'
+
+= link_to 'Back', posts_path
+{% endhighlight %}
+
+{% highlight haml %}
+# app/views/posts/edit.html.haml
+%h1 Editing post
+
+- form_for(@post) do |f|
+  = f.error_messages
+
+  %p
+    = f.label :title
+    %br
+    = f.text_field :title
+
+  %p
+    = f.label :content
+    %br
+    = f.text_area :content
+
+  %p
+    = f.submit 'Update'
+
+= link_to 'Show', @post
+=  |
+= link_to 'Back', posts_path
+
+{% endhighlight %}
+
+5\. 用sass代替css：
+
+{% highlight bash %}
+$ mkdir public/stylesheets/sass
+$ css2sass public/stylesheets/scaffold.css > public/stylesheets/sass/scaffold.sass
+{% endhighlight %}
+
+下面你就可以享受haml为你带来的高效啦！当然你完全可以找到生成haml的generator，这里只是展示一下haml的简洁而已
+

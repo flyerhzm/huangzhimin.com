@@ -1,0 +1,75 @@
+---
+layout: post
+title: sweeper
+categories:
+- Rails Plugins
+---
+sweeper插件用于自动生成清扫缓存的sweeper类，监视特定的model，根据相应的事件触发其行动，下面是一个example：
+
+1\. 首先生成项目和初始数据：
+
+{% highlight bash %}
+$ rails test_sweeper
+$ cd test_sweeper
+$ script/generate scaffold post title:string body:text
+{% endhighlight %}
+
+{% highlight ruby %}
+#db/migrate/001_create_posts.rb
+(1..50).each do |num|
+  Post.create(:title => "test#{num}", :body => "Test#{num}")
+end
+{% endhighlight %}
+
+{% highlight bash %}
+$ rake db:migrate
+{% endhighlight %}
+
+2\. 安装插件：
+
+{% highlight bash %}
+$ script/plugin install http://topfunky.net/svn/plugins/sweeper
+{% endhighlight %}
+
+3\. 生成Sweeper类，该类在model增删改之后将缓存页面清除：
+
+{% highlight bash %}
+$ script/generate sweeper post after_save before_destroy
+{% endhighlight %}
+
+{% highlight ruby %}
+#app/models/post_sweeper.rb
+class PostSweeper  ActionController::Caching::Sweeper
+  observe Post
+
+  def after_save(record)
+    expire_page :controller => 'posts', :action => 'index'
+  end
+
+  def before_destroy(record)
+    expire_page :controller => 'posts', :action => 'index'
+  end
+end
+{% endhighlight %}
+
+4\. 在controller中指定缓存页面和sweeper类：
+
+{% highlight ruby %}
+#app/controller/posts_controller.rb
+caches_page :index
+cache_sweeper :post_sweeper
+{% endhighlight %}
+
+5\. 察看效果：
+
+当第一次访问/posts时，server会查询数据库，render页面，并生成cache page：
+{% highlight bash %}
+Cached page: /posts.html (0.00737)
+{% endhighlight %}
+之后再访问/posts时，server就不会再去查询数据库，render页面，而直接去读cache page
+直到我们对post做了增删改中任意一个操作，server会删除被cache的page: 
+{% highlight bash %}
+Expired page: /posts.html (0.00014)
+{% endhighlight %}
+然后再访问/posts时，server又会去查询数据库，render页面，并生成cache page
+
