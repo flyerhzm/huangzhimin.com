@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Richard Huang</title>
+ <link href="http://www.huangzhimin.com/entries.xml" rel="self"/>
+ <link href="http://www.huangzhimin.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://www.huangzhimin.com/</id>
+ <author>
+   <name>Richard Huang</name>
+   <email>flyerhzm@gmail.com</email>
+ </author>
+
+ {% for post in site.posts limit:50 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://www.huangzhimin.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://www.huangzhimin.com{{ post.id }}</id>
+   <content type="html">&lt;p&gt;Please subscribe my new blog posts &lt;a href="http://feeds.feedburner.com/richard-huang"&gt;http://feeds.feedburner.com/richard-huang&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
+ {% endfor %}
+
+</feed>
+
