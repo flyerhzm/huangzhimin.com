@@ -56,17 +56,6 @@
                 {% endfor %}
               </ul>
             </div>
-            <div class="widget">
-              <h2 class="widget-title">Archives</h2>
-              <ul>
-                {% for monthly_archive in site.monthly_archives reversed %}
-                <li>
-                  <a href="{{ site.baseurl }}/{{ monthly_archive.url }}">{{ monthly_archive.name }}</a> ({{ monthly_archive.posts | size }} posts)
-                </li>
-                {% endfor %}
-              </ul>
-              <div class="clear"></div>
-            </div>
           </div>
           <div id="secondary-sidebar">
             <div class="widget">
@@ -75,6 +64,17 @@
                 {% for post in site.posts limit:10 %}
                 <li>
                   <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+              <div class="clear"></div>
+            </div>
+            <div class="widget">
+              <h2 class="widget-title">Archives</h2>
+              <ul>
+                {% for monthly_archive in site.monthly_archives reversed %}
+                <li>
+                  <a href="{{ site.baseurl }}/{{ monthly_archive.url }}">{{ monthly_archive.name }}</a> ({{ monthly_archive.posts | size }} posts)
                 </li>
                 {% endfor %}
               </ul>
