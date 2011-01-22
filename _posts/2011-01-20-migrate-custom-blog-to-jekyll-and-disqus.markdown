@@ -17,7 +17,7 @@ Then I began to build the new blog system by jekyll two weeks ago. It's really e
 3. no categroy page, which lists the posts in that category.
 4. no monthly archive page, which list posts by month.
 5. no comments, yep, it generates a static website.
-6. can't display liquid codes on post.
+6. <strike>can't display liquid codes on post.</strike>(Use literal tag to display liquid codes)
 
 Like rails, jekyll supports plugins and extensions so that we can extend it as we want. Originally I planed to host my blog on github, but I found github doesn't support any plugins and extensions, it only supports the default official jekyll. Bad news, I have to host it on my own server with jekyll extensions, it's not a big problem.
 
@@ -28,19 +28,19 @@ OK, let me show how to fix the above limitation with my forked extension.
 1\. category section on sidebar.
 
 {% highlight html %}
-{% raw %}
+{% literal %}
 <ul>
   {% for category in site.categories %}
   <li><a href="/categories/{{category | first}}">{{category | first}} ({{category | last | size }})</a></li>
   {% endfor %}
 </ul>
-{% endraw %}
+{% endliteral %}
 {% endhighlight %}
 
 2\. archive section on sidebar.
 
 {% highlight html %}
-{% raw %}
+{% literal %}
 <ul>
   {% for monthly_archive in site.monthly_archives reversed %}
   <li>
@@ -48,13 +48,13 @@ OK, let me show how to fix the above limitation with my forked extension.
   </li>
   {% endfor %}
 </ul>
-{% endraw %}
+{% endliteral %}
 {% endhighlight %}
 
 3\. category page, add a layout `category_index.html`
 
 {% highlight html %}
-{% raw %}
+{% literal %}
 ---
 layout: default
 ---
@@ -86,13 +86,13 @@ layout: default
   </li>
 {% endfor %}
 </ol>
-{% endraw %}
+{% endliteral %}
 {% endhighlight %}
 
 4\. monthly archive page, add a layout `archive_monthly.html`
 
 {% highlight html %}
-{% raw %}
+{% literal %}
 ---
 layout: default
 ---
@@ -125,7 +125,7 @@ layout: default
     {% endif %}
   {% endfor %}
 </ol>
-{% endraw %}
+{% endliteral %}
 {% endhighlight %}
 
 5\. comments, hmmm...it's impossible for jekyll to provide comments functionality, but I guess you know the web service [disqus][4] which provides an online comment system. You can get two javascripts after you creating an forum on disqus, one for posting/displaying comments, the other is to dispaly comments count for each post. The following is the javascript to post/display comments.
@@ -162,6 +162,7 @@ And the javascript to display comments count.
 </script>
 {% endhighlight %}
 
+<strike>
 6\. can't display liquid codes. I found this limitation while I'm writing this post, it's impossible to display raw liquid codes, as liquid always try to execute each liquid code. I have to write a custom tag raw to solve this issue.
 
 {% highlight ruby %}
@@ -201,6 +202,7 @@ Liquid::Template.register_tag('raw', Jekyll::Raw)
 {% endhighlight %}
 
 So you can use the raw tag to escape all the liquid codes as you want.
+</strike>
 
 **You can get the source code of my blog system on [github][7].**
 
@@ -214,7 +216,7 @@ I'm a developer, so it's not too difficult for to migrate old data.
 
 **Migrate old posts**
 
-Like the common blog system, the old post is saved as html format. After working on several projects on github, I start to love markdown, so I decide to convert all the old html posts to markdown format. There is a project named [reverse-markdown][5] to do this job, I also forked it to handle code highlight (before I used syntaxhighlighter, now is `{% raw %}{% highlight language %}...{% endhighlight %}{% endraw %}`), here is the [script][6].
+Like the common blog system, the old post is saved as html format. After working on several projects on github, I start to love markdown, so I decide to convert all the old html posts to markdown format. There is a project named [reverse-markdown][5] to do this job, I also forked it to handle code highlight (before I used syntaxhighlighter, now is `{% literal %}{% highlight language %}...{% endhighlight %}{% endliteral %}`), here is the [script][6].
 
 Then I began to migrate old posts
 
