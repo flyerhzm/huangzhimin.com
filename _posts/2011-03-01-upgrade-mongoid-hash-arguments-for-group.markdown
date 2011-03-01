@@ -7,7 +7,7 @@ categories:
 ---
 You will receive a warning for the group method call after upgrading mongoid.
 
-{% highight plaintext %}
+{% highlight bash %}
 Collection#group no longer take a list of paramters. This usage is deprecated.
 {% endhighlight %}
 
