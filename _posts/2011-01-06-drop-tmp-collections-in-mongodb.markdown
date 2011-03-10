@@ -13,7 +13,7 @@ db.system.namespaces.find({name: /tmp.mr/}).forEach(function(z) {
   try{
     db.getMongo().getCollection( z.name ).drop();
   } catch(err) {}
-};
+});
 {% endhighlight %}
 
 It finds all the namespaces whose names contain tmp.mr, if so, drop the collections.
