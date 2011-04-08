@@ -18,7 +18,7 @@ and the models are defined as follows
 {% highlight ruby %}
 class User
   include Mongoid::Document
-  refereneces_many :user_accounts
+  references_many :user_accounts
 end
 
 class Account
@@ -40,7 +40,7 @@ I'm glad that mongoid began to support many to many association after mongoid 2.
 {% highlight ruby %}
 class User
   include Mongoid::Document
-  refereneces_and_referenced_in_many :accounts
+  references_and_referenced_in_many :accounts
 end
 
 class Account
