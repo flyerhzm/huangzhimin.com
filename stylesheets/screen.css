@@ -830,6 +830,9 @@ h2.widget-title,
 #carrington-about a.more:visited {
 	float:right;
 }
+#carrington-speaker{
+  text-align:center;
+}
 #carrington-archives ul {
 	border-top: 1px dotted #cecfd1;
 }
