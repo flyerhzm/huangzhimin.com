@@ -14,7 +14,10 @@ To avoid making such mistake anymore, I write a git hook
 {% highlight ruby %}
 #!/usr/bin/env ruby
 
-`git diff-index --name-only HEAD`.split("\n").each do |filename|
+`git diff-index --name-status HEAD`.split("\n").each do
+|status_with_filename|
+  status, filename = status_with_filename.split(/\s+/)
+  next if status == 'D'
   File.open(filename) do |file|
     while line = file.gets
       if line.include?("<<<<<<<") || line.include?(">>>>>>>")
