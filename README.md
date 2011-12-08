@@ -1,9 +1,10 @@
 flyerhzm.github.com
 ===================
 
-my blog <http://www.huangzhimin.com>
+my blog <http://huangzhimin.com>
 
 Usage
 -----
 
-    ejekyll
+    bundle install
+    bundle exec ejekyll
