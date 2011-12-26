@@ -22,8 +22,9 @@ arguement to a rake task.
 But there is another way to pass the arguments to rake task via []
 
 {% highlight ruby %}
-task :try_argument, [argument1, argument2] do
-  argument1 or argument2
+task :try_argument, [:key1, :key2] do |t, args|
+  args.with_defaults(:key1 => value1, :key2 => value2)
+  args[:key1] or args[:key2]
 end
 
 rake try_argument[xxx, yyy]
