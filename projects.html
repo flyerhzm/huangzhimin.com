@@ -29,9 +29,8 @@ title: Projects
 </div>
 
 <script type="text/javascript" charset="utf-8">
-  $.githubUser('flyerhzm', function(data) {
-    $('#github-projects').html('');
-
+  $('#github-projects').html('');
+  $.githubUser(['flyerhzm', 'railsbp'], function(data) {
     var repos = data.user.repositories;
     repos.sort(function(a,b) {
       return b.watchers - a.watchers;
