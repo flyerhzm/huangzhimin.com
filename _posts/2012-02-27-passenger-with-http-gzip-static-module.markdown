@@ -18,4 +18,4 @@ installation, I found there is a [pull request][1] to add
 http_gzip_static_module, so I changed to source code of passenger gem,
 then installed nginx as default. :-)
 
-    [1]:[https://github.com/FooBarWidget/passenger/pull/35]
+[1]:[https://github.com/FooBarWidget/passenger/pull/35]
