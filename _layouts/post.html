@@ -5,26 +5,10 @@ layout: default
   <h1 class="entry-title">
     <a href="{{ page.url }}" title="{{ page.title }}" rel="bookmark">{{ page.title }}</a>
   </h1>
-  <!-- AddThis Button BEGIN -->
-  <div class="addthis_toolbox addthis_default_style ">
-    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-    <a class="addthis_button_tweet"></a>
-    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    <a class="addthis_counter addthis_pill_style"></a>
-  </div>
-  <!-- AddThis Button END -->
   <div class="entry-content full-content">
     {{ content }}
     <div class="clear"></div>
   </div>
-  <!-- AddThis Button BEGIN -->
-  <div class="addthis_toolbox addthis_default_style ">
-    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-    <a class="addthis_button_tweet"></a>
-    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    <a class="addthis_counter addthis_pill_style"></a>
-  </div>
-  <!-- AddThis Button END -->
   <p class="alt-font tight">
     Posted in&nbsp;
     {% for category in page.categories %}
@@ -43,7 +27,6 @@ layout: default
 </div>
 
 <div id="disqus_thread"></div>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=flyerhzm"></script>
 <script type="text/javascript">
   var disqus_shortname = 'richard-huang';
 
