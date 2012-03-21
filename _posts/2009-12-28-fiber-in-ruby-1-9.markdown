@@ -2,7 +2,7 @@
 layout: post
 title: Fiber in Ruby 1.9
 categories:
-- Ruby
+- ruby
 ---
 Ruby 1.9新推出了Fiber这个新的概念，有人说它是轻量级的Thread，其实不然。它是一段代码块，可以停止、继续，可以有返回值、写入值，有多个Fiber时，它们的执行顺序是固定。它和Thread相似的是，它的执行不是线性的，它可以在中途停止，将控制权交给主程序或者是其它的Fiber，但是中控制权交接的过程是由你来控制的，而不是线程调度程序。所以有时候Fiber可以完成之前只能用Thread才能完成的任务（比如：Producer-Consumer）。
 

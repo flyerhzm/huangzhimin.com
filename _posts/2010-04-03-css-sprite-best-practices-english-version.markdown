@@ -2,9 +2,9 @@
 layout: post
 title: css sprite best practices
 categories:
-- Rails
+- rails
 - css
-- RubyGems
+- rubygems
 ---
 [css sprite最佳实践（中文版）][1]
 

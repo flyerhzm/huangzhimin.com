@@ -2,7 +2,7 @@
 layout: post
 title: 完成Nike预备跑
 categories:
-- Life
+- life
 ---
 上周六参加了Nike预备跑，休息了两天，今天才有时间上来写点。
 

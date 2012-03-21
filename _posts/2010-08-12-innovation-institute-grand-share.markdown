@@ -2,7 +2,7 @@
 layout: post
 title: 盛大创新院分享
 categories:
-- Presentation
+- presentation
 ---
 昨天去盛大创新院做分享，主要是介绍我目前正在做的网站，[rails-bestpractices.com][1]
 

@@ -2,7 +2,7 @@
 layout: post
 title: 买彩票
 categories:
-- Life
+- life
 ---
 上个月小笨蛋说要去买彩票，不过因为忙，也因为不懂规则，所以一直没买。
 

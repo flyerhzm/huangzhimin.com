@@ -2,7 +2,7 @@
 layout: post
 title: Console Snacks[摘自Advanced Rails Recipes]
 categories:
-- Rails
+- rails
 ---
 上周把Advanced Rails Recipes扫了一遍，受益匪浅，尤其是关于script/console那一段，都是之前没试过的，呵呵，做个摘录。
 

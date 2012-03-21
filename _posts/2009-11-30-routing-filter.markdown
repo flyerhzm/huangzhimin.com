@@ -2,7 +2,7 @@
 layout: post
 title: routing-filter
 categories:
-- Rails Plugins
+- rails plugins
 ---
 [routing-filter][1]提供了强大的用于扩展Rails routing的功能。
 

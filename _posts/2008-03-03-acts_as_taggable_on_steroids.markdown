@@ -2,7 +2,7 @@
 layout: post
 title: acts_as_taggable_on_steroids
 categories:
-- Rails Plugins
+- rails plugins
 ---
 acts_as_taggable_on_steroids是基于DHH写的acts_as_taggable，能够为active record的模型增加tag的功能，根据tag查找模型对象，以及计算tag云。下面的示例中我们将为博客系统增加tag功能：
 

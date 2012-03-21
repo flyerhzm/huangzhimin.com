@@ -2,7 +2,7 @@
 layout: post
 title: github最近有点不稳定
 categories:
-- Life
+- life
 ---
 今天早上在github上面发布bullet插件的第一个gem包，结果等了半天没结果，一会返回Queued for rebuild，一会什么都不返回。在support上面发帖提问，被告知可能是gem build进程运行在low priority，他们会把它升到medium priority。
 

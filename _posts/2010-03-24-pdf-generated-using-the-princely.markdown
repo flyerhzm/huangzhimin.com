@@ -2,8 +2,8 @@
 layout: post
 title: 使用princely生成pdf
 categories:
-- Rails
-- Ruby
+- rails
+- ruby
 ---
 Prince是一个将html和xml转换为pdf的程序，最突出的特点是prince能够根据css来格式化转换之后的pdf，这实在是太适合web程序员了。princely是一个基于prince的rails插件，使用起来也非常方便。
 

@@ -2,9 +2,9 @@
 layout: post
 title: git for hostmonster
 categories:
-- Git
-- Capistrano
-- Hostmonster
+- git
+- capistrano
+- hostmonster
 ---
 前段时间对网站做了些更新，于是在本地修改了代码，再git push，谁知却得到bash: git-receive-pack: command not found的error，我的git repository是放在hostmonster服务器上面的，之前都是正常的，于是提交ticket给hostmonster的support，得到的答复是他们升级的openssh，通过git+ssh不会再读取.bashrc或.ssh/environment文件，也就是说通过git+ssh没有办法修改PATH了。
 

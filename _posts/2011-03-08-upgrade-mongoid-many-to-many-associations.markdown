@@ -3,7 +3,7 @@ layout: post
 title: Upgrade Mongoid - Many to many association
 categories:
 - mongoid
-- Ruby
+- ruby
 ---
 Before mongoid 2.0.0.rc1, there is no default support for many to many association. So we use join document (aka join table in relational database) to implement the many to many association.
 

@@ -2,7 +2,7 @@
 layout: post
 title: use rspec filter to speed up tests
 categories:
-- Rspec
+- rspec
 ---
 Rspec 2 introduce a very efficient way to test only one test or one test
 suit, it's filter_run.

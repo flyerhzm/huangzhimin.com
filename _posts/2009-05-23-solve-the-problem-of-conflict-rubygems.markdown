@@ -2,8 +2,8 @@
 layout: post
 title: 解决rubygems冲突的问题
 categories:
-- Ruby
-- Hostmonster
+- ruby
+- hostmonster
 ---
 在hostmonster上面手动编译了ruby和rubygems，不过今天在尝试rake gems:unpack的时候报错，说是调用了nil.version，一跟踪，原来是找不到gem的spec。不过明明是装好没问题的呀，奇怪了。于是去irb中尝试：
 

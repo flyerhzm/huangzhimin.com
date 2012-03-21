@@ -3,7 +3,7 @@ layout: post
 title: contact-list类库依赖包之json
 categories:
 - contact-list
-- Java
+- java
 ---
 json类库为java提供了方便地在json和string之间的转换和对json数据的操作。
 

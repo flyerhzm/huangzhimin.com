@@ -2,8 +2,8 @@
 layout: post
 title: 方便地浏览github上所有的issues
 categories:
-- Github
-- Sinatra
+- github
+- sinatra
 ---
 我在github上面有好几个repositories，经常会有人来报告报告issue，但问题是有时候手头正好有其它的事情需要处理，就没有办法马上修复issue，随着时间的推移，越来越多的issues被积压下来，而且是分散在各个repositories，这让我找起来很费力，必须首先进入repository页面，再点击issues，才能看到相应的issues。我想要是有个页面能够列出所有repositories的issues该多好啊，不过github上面好像没有找到这样的页面。没办法，只好自己动手丰衣足食。
 

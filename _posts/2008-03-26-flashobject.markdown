@@ -2,7 +2,7 @@
 layout: post
 title: FlashObject
 categories:
-- Rails Plugins
+- rails plugins
 ---
 自从youtube横空出世之后，网上flash视频在线观看越来越流行了，flashobject插件就提供了非常方便的构建在线flash视频的功能，它是基于http://blog.deconcept.com/swfobject之上的应用。下面来看个实例：
 

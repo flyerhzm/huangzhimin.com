@@ -2,8 +2,8 @@
 layout: post
 title: 在github上发布gem
 categories:
-- Ruby
-- RubyGems
+- ruby
+- rubygems
 ---
 现在ruby上流行的gem一般都在两个repository上，一个是rubyforge，一个是github。
 

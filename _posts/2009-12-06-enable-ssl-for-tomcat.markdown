@@ -2,7 +2,7 @@
 layout: post
 title: enable ssl for tomcat
 categories:
-- Java Web
+- java web
 ---
 昨天参加barcamp会议，介绍了contactlist，有不少人质疑服务的安全性，希望使用https来增强安全性。
 

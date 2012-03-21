@@ -2,8 +2,8 @@
 layout: post
 title: require某个版本的gem
 categories:
-- Ruby
-- RubyGems
+- ruby
+- rubygems
 ---
 一般我们require一个gem，都是require最新的版本
 

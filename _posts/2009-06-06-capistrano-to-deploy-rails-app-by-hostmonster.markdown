@@ -2,9 +2,9 @@
 layout: post
 title: 通过Capistrano部署Rails App到Hostmonster
 categories:
-- Capistrano
-- Rails
-- Hostmonster
+- capistrano
+- rails
+- hostmonster
 ---
 贴贴我通过Capistrano自动发布到Hostmonster的deploy.rb文件吧
 

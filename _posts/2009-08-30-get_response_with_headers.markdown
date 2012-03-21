@@ -2,9 +2,9 @@
 layout: post
 title: get_response_with_headers
 categories:
-- Ruby
-- Rspec
-- HTTP
+- ruby
+- rspec
+- http
 ---
 最近在用ruby的net/http写爬虫，发现net/http提供的接口还真不是一般不好用
 

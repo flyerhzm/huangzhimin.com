@@ -3,7 +3,7 @@ layout: post
 title: Upgrade Mongoid - Default Type for Field
 categories:
 - mongoid
-- Ruby
+- ruby
 ---
 If you have watched the episode about [mongoid][1] from railscast, ryanb removed the default type String for field, like
 

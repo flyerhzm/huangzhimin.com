@@ -2,8 +2,8 @@
 layout: post
 title: capistrano读取releases目录的错误
 categories:
-- Ruby
-- Capistrano
+- ruby
+- capistrano
 ---
 新年刚开始工作就遇到capistrano读取releases目录的错误，deploy之后总是把最新的release目录删除，看来是判断哪个release目录是最新的时候出错了。
 

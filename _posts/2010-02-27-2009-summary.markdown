@@ -2,7 +2,7 @@
 layout: post
 title: 2009年总结
 categories:
-- Life
+- life
 ---
 现在才想起来写2009年的总结好像有点晚哦，不过有总比没有好啊。
 

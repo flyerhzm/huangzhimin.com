@@ -2,7 +2,7 @@
 layout: post
 title: 人生第一个10公里
 categories:
-- Life
+- life
 ---
 上在世纪公园参加了Nike举办的10公里健身跑，1小时1分钟，创下了个人最好成绩（呵呵，第一次跑），挺有成就感的！
 

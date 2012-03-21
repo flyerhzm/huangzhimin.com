@@ -2,7 +2,7 @@
 layout: post
 title: reset_counter in rails
 categories:
-- Rails
+- rails
 ---
 I thought reset_counter method is to reset a counter_cache column to be
 0, but it is not. After trying several times, I finally realize that

@@ -2,7 +2,7 @@
 layout: post
 title: 通过paperclip上传视频并转换为flv格式
 categories:
-- Rails
+- rails
 ---
 paperclip作为一个非常流行的文件上传的rails插件，最常被应用的就是上传图片，裁剪，格式转换等等，网上的demo也是一大堆，但是介绍视频上传的却很少。其实paperclip的处理模块定义非常清晰，可以很方便的实现视频的格式转换。
 

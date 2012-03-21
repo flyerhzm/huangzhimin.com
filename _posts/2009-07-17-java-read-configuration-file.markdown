@@ -2,7 +2,7 @@
 layout: post
 title: java读取配置文件
 categories:
-- Java
+- java
 ---
 最近在完善contact-list项目，打算把一些配置写配置文件里，就像log4j的做法一样，代码如下：
 

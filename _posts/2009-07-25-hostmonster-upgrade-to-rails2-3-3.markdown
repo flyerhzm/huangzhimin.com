@@ -2,8 +2,8 @@
 layout: post
 title: Hostmonster升级到Rails2.3.3
 categories:
-- Hostmonster
-- Rails
+- hostmonster
+- rails
 ---
 前两天Hostmonster把Rails升级到2.3.3，导致我的网站无法访问。查看日志，Dispatcher failed to catch: undefined method `read' for class `FCGI::Stream' (NameError)，给Hostmonster提交了ticket，到现在都还没有结果，没办法，只能靠自己了。
 

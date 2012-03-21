@@ -2,7 +2,7 @@
 layout: post
 title: button_to的使用
 categories:
-- Rails
+- rails
 - css
 ---
 页面间的跳转或者请求，用得最多的就是link_to和form_for，一个发送get或delete请求，一个post或put请求。但是碰到投票之类的链接，虽然是一个post请求，但是form里面却不需要任何数据，碰到这样的情况，我们希望像link_to那样一行搞定。

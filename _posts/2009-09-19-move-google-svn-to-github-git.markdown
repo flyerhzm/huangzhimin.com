@@ -2,7 +2,7 @@
 layout: post
 title: Move google svn to github git
 categories:
-- Git
+- git
 - contact-list
 ---
 之前contactlist这个项目一直放在google code上面，今天把contactlist移植到了github上。记录下移植的过程：

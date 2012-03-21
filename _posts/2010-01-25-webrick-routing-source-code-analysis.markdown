@@ -3,7 +3,7 @@ layout: post
 title: webrick源码分析──路由
 categories:
 - webrick
-- Ruby
+- ruby
 ---
 webrick的路由是由WEBrick::HTTPServer::MountTable定义的
 

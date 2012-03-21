@@ -2,7 +2,7 @@
 layout: post
 title: after_commit
 categories:
-- Rails
+- rails
 ---
 We are using RabbitMQ as our message queue system, ruby client is
 workling. This week we encountered a strange issue, we create a

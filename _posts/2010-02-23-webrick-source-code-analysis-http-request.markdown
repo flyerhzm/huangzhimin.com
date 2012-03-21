@@ -3,7 +3,7 @@ layout: post
 title: webrick源码分析——http请求
 categories:
 - webrick
-- Ruby
+- ruby
 ---
 http服务器的主要工作就是解析http请求，然后返回http应答。http请求从socket读入，就是一段特定格式的字符串，下面是访问huangzhimn.com首页的http请求
 

@@ -2,7 +2,7 @@
 layout: post
 title: 浙大校友趣味运动会
 categories:
-- Life
+- life
 ---
 下午参加了浙大校友趣味运动会，在华师大。
 

@@ -2,8 +2,8 @@
 layout: post
 title: 使用active_scaffold做为项目的后台管理
 categories:
-- Rails
-- Rails Plugins
+- rails
+- rails plugins
 ---
 最近做了一个很小的网站，需要一个简单的后台管理来对数据进行审核，由于只是个人用用，不想太浪费时间，就选用active_scaffold插件来做后台管理。对于小项目来说，应用active_scaffold可以快速地构建起项目的后台管理，自己不需要写view，相信大多数程序员都不怎么喜欢吧，controller也只需简单的配置即可。
 

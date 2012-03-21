@@ -2,7 +2,7 @@
 layout: post
 title: 郁闷的一天
 categories:
-- Life
+- life
 ---
 昨天开始转到一个新的项目，搭建环境遇到了问题，job_server总是起不来，看上去像是链接不到数据库的问题。Aaron帮忙看了也没什么结果，postgres之前是compile出来的的，改成port装和dmg装都没用。
 

@@ -2,7 +2,7 @@
 layout: post
 title: haml
 categories:
-- Rails Plugins
+- rails plugins
 ---
 最近做公司的项目，接触到了haml。真是耳目一新，语法太简洁了，页面代码量也少了，也不会出现标签不匹配的问题了，用起来非常爽！下面我来介绍如何在rails中使用haml
 

@@ -2,7 +2,7 @@
 layout: post
 title: 读《杜拉拉升职记》
 categories:
-- Life
+- life
 ---
 趁着当当网的周年店庆，买了本榜单第一名的杜拉拉升职记看看。
 

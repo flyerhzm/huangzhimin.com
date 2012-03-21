@@ -2,7 +2,7 @@
 layout: post
 title: barcamp归来
 categories:
-- Presentation
+- presentation
 ---
 昨天公司参加了barcamp会议，barcamp会议的形式比较特别，分三个房间，任何人都可以做presentation，你可以去听你感兴趣的话题。不过来的人并不都是做技术的，大多是做市场，推销自己想法的比较多。
 

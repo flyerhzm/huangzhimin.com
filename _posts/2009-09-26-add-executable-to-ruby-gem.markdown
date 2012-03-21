@@ -2,8 +2,8 @@
 layout: post
 title: add executable to ruby gem
 categories:
-- RubyGems
-- Ruby
+- rubygems
+- ruby
 ---
 刚刚给rfetion增加了executable，使得用户可以直接在shell下面发送短信。
 

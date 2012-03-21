@@ -233,7 +233,7 @@ Post.all.each do |post|
 layout: post
 title: #{post.title.gsub("&#65281;", "！").gsub("&#65292;", "，")}
 categories:
-- #{Translate.t(post.category.name, 'CHINESE_SIMPLIFIED', 'ENGLISH')}
+- #{translate.t(post.category.name, 'chinese_simplified', 'english')}
 ---
 #{ReverseMarkdown.new.parse_string(post.body)}
     EOF

@@ -2,7 +2,7 @@
 layout: post
 title: 沉浮
 categories:
-- Life
+- life
 ---
 一本很好看的小说，讲了一个女孩子从前台转为销售之后的故事。
 

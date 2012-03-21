@@ -2,7 +2,7 @@
 layout: post
 title: sweeper
 categories:
-- Rails Plugins
+- rails plugins
 ---
 sweeper插件用于自动生成清扫缓存的sweeper类，监视特定的model，根据相应的事件触发其行动，下面是一个example：
 

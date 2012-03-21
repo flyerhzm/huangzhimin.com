@@ -2,7 +2,7 @@
 layout: post
 title: Add logger to rake task
 categories:
-- Rails
+- rails
 ---
 在rake task中写了一个爬虫，用cron定期去爬取，但是没有任何输出，实在心里没底。于是要加入log，结果发现logger在task中没有定义，只能自己加上去了。
 

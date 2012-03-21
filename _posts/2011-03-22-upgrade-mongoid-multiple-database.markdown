@@ -3,7 +3,7 @@ layout: post
 title: Upgrade Mongoid - Multiple databases
 categories:
 - mongoid
-- Ruby
+- ruby
 ---
 My recent post [Use different mongodb instances in mongoid][0] tells you how to use multiple databases, it looks good, but mongoid began to support multiple databases itself from mongoid.2.0.0.rc.1, much better than my hack.
 

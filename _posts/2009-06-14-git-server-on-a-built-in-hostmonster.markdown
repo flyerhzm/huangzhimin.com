@@ -2,9 +2,9 @@
 layout: post
 title: 在hostmonster上搭建git server
 categories:
-- Hostmonster
-- Rails
-- Git
+- hostmonster
+- rails
+- git
 ---
 hostmonster本身并不支持git，不过还好它提供了ssh，我们可以ssh上去编译git。
 

@@ -2,8 +2,8 @@
 layout: post
 title: rails and facebook connect
 categories:
-- Rails
-- Facebook
+- rails
+- facebook
 ---
 最近项目需要做一些facebook应用，比如要允许用户登录facebook，要获取用户facebook的好友信息等等。登录facebook自然选用时下流行的facebook connect。代码写起来非常简单，用户的体验也非常好。
 

@@ -2,7 +2,7 @@
 layout: post
 title: acts_as_rateable
 categories:
-- Rails Plugins
+- rails plugins
 ---
 acts_as_rateable插件为ActiveRecord模型对象提供评分/评级的能力，我们的示例是在blog系统中添加简单的打分功能。
 

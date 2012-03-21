@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu安装msttcorefonts
 categories:
-- Linux
+- linux
 ---
 前一段时间装了N次Ubuntu，又回到了8.04版本。不过每次在安装msttcorefonts的时候都会失败，原因是家里的网络不好，而ubuntu下载字体的timeout又很小，所以每次肯定是失败了。
 

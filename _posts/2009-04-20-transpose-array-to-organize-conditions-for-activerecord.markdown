@@ -2,8 +2,8 @@
 layout: post
 title: 通过数组转置来组织ActiveRecord的conditions
 categories:
-- Rails
-- ActiveRecord
+- rails
+- activerecord
 ---
 使用ActiveRecord的conditions最基本的方法就是数组：
 

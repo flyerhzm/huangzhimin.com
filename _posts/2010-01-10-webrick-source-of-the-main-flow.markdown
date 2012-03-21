@@ -3,7 +3,7 @@ layout: post
 title: webrick源码分析──主要流程
 categories:
 - webrick
-- Ruby
+- ruby
 ---
 webrick作为ruby自带的一个http server，很适合拿来作为学习之用。首先来看看最简单的使用webrick的示例吧
 

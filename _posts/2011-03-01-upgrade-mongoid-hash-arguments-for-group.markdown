@@ -3,7 +3,7 @@ layout: post
 title: Upgrade Mongoid - Hash arguments for group
 categories:
 - mongoid
-- Ruby
+- ruby
 ---
 You will receive a warning for the group method call after upgrading mongoid.
 

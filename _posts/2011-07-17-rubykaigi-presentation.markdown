@@ -2,9 +2,9 @@
 layout: post
 title: rubykaigi presentation
 categories:
-- Presentation
-- Ruby
-- Rails
+- presentation
+- ruby
+- rails
 ---
 My presentation in RubyKaigin 2011 today.
 

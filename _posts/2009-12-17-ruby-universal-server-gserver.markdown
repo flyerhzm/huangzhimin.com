@@ -2,7 +2,7 @@
 layout: post
 title: ruby通用服务器gserver
 categories:
-- Ruby
+- ruby
 ---
 之前随手翻了几页Programming Ruby 1.9，看到了gserver，查看ruby-doc，原来gserver是一个通用服务器的实现，提供了线程池管理，简单的日志和多服务器管理。
 

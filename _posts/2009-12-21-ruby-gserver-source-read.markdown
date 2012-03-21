@@ -2,7 +2,7 @@
 layout: post
 title: ruby gserver源码阅读
 categories:
-- Ruby
+- ruby
 ---
 gserver作为通用服务器的实现，最关键的就是start方法
 

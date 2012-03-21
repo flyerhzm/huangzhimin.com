@@ -2,8 +2,8 @@
 layout: post
 title: add gem rake for rails
 categories:
-- Rails
-- RubyGems
+- rails
+- rubygems
 ---
 使用过rails插件的一定知道，只要在插件的tasks目录下面定义rake文件，rails就会自动加入其中定义的task。但是gem就不能这样用了，即使rake gems:unpack也没用。
 

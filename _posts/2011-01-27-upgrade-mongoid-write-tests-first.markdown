@@ -3,7 +3,7 @@ layout: post
 title: Upgrade Mongoid - Write Tests First
 categories:
 - mongoid
-- Ruby
+- ruby
 ---
 Mongoid is one of the popular Object Document Mappings between Ruby and Mongo, and it is still evolving. We began to use mongoid 2.0.0.beta.20 several weeks ago, the author of mongoid @durran said he wanted to release the 2.0.0 last week (As you know 2.0.0 is still not released yet, but he really did a lot of awesome work), so we tried the version 2.0.0.rc.6 to prepare upgrading to final 2.0.0.
 

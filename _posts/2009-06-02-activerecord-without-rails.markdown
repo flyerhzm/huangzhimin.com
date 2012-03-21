@@ -2,9 +2,9 @@
 layout: post
 title: ActiveRecord Without Rails
 categories:
-- Ruby
-- ActiveRecord
-- Rails
+- ruby
+- activerecord
+- rails
 ---
 前几天写了个小程序，帮我选号买彩票。主要是去网上抓取历次的开奖号码，存到数据库，然后再做统计分析。
 

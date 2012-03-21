@@ -2,9 +2,9 @@
 layout: post
 title: 为resque写扩展
 categories:
-- Rails
-- Resque
-- Ruby
+- rails
+- resque
+- ruby
 ---
 resque是基于redis的ruby类库，用于创建后台任务，把这些后台任务放在多个队列中去，之后在处理它们。github就是使用resque来处理它们的后台任务的。
 

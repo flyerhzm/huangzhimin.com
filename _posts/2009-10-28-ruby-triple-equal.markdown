@@ -2,7 +2,7 @@
 layout: post
 title: Ruby triple equal
 categories:
-- Ruby
+- ruby
 ---
 今天读sexp_processor源代码，看到有多出调用 Class === Object 这样的语法，突然之间没想出来===是干嘛的了。网上搜索了一下，原来是判断后面这个对象是不是前面这个类的实例，比如
 

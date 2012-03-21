@@ -2,9 +2,9 @@
 layout: post
 title: Less -- Css的Ruby扩展
 categories:
-- Ruby
+- ruby
 - css
-- Less
+- less
 ---
 Less是对Css的一种Ruby扩展，使得Css可以支持变量，Mixin，内嵌规则和数字操作。
 

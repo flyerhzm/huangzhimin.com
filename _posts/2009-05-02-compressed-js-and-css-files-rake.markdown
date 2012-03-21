@@ -2,7 +2,7 @@
 layout: post
 title: 压缩js和css文件的rake
 categories:
-- Rails
+- rails
 ---
 对于Web应用来说，一个页面的HTTP请求数越多，往往导致页面加载的时间越长，服务器的负担也越重。对于每个HTTP请求，都要进行握手，客户端说hello，服务器端也说hello，然后再传输内容，所以要尽量减少请求的数量。
 

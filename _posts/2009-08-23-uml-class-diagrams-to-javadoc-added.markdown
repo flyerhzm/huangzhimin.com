@@ -4,7 +4,7 @@ title: 给javadoc增加uml类图
 categories:
 - maven
 - uml
-- Java
+- java
 ---
 今天准备开始写点介绍我的contact-list jar包的文章，自然要放些直观的UML图看看，google了一下，找到了一个名叫apiviz的maven插件，可以为javadoc生成uml类图。用起来也很方便，首先安装graphviz包
 

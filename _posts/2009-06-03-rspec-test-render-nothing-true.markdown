@@ -2,8 +2,8 @@
 layout: post
 title: Rspec测试render :nothing => true
 categories:
-- Rails
-- Rspec
+- rails
+- rspec
 ---
 对于controller render/redirect的测试，一般对应以下的测试方法
 

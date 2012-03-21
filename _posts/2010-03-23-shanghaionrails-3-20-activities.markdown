@@ -2,7 +2,7 @@
 layout: post
 title: shanghaionrails 3.20 活动
 categories:
-- Presentation
+- presentation
 ---
 上周六参加了shanghaionrails的线下活动，活动地点就在云岭东路上的汇银铭尊，离我家很近，我就骑着自行车过去了。本次活动是由5173.com赞助的，场地非常不错，不禁感叹卖游戏装备的公司就是有钱啊。
 

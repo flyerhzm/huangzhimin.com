@@ -2,7 +2,7 @@
 layout: post
 title: 困惑
 categories:
-- Life
+- life
 ---
 昨天发了几个Ticket给Hostmonster，控诉自己的server无法访问中国的网站，得到的结果和预期一样，它们没有限制我访问中国的网站，肯定是被中国给block了，买了dedicated ip就不能更换。
 

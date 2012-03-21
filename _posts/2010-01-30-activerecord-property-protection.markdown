@@ -2,8 +2,8 @@
 layout: post
 title: activerecord属性保护
 categories:
-- Rails
-- ActiveRecord
+- rails
+- activerecord
 ---
 最近在看rails安全方面的书，第一部分就是关于生成activerecord对象的参数保护问题。平时一直使用，今天心血来潮想起要看看源代码是如何实现的。
 

@@ -2,8 +2,8 @@
 layout: post
 title: autotest notify for Ubuntu
 categories:
-- Ruby
-- Linux
+- ruby
+- linux
 ---
 一直很羡慕Mac下的growl，每次autotest都可以弹出个提示框，好眩。如今Ubuntu的用户也有了自己的通知系统notify OSD，赶紧用到自己的autotest上面。
 

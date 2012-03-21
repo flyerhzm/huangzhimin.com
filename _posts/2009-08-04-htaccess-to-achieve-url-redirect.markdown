@@ -2,7 +2,7 @@
 layout: post
 title: .htaccess实现url redirect
 categories:
-- Seo
+- seo
 ---
 最近开始做些seo方面的工作，纠正了自己之前的误区，以为huangzhimin.com和www.huangzhimin.com是相同的，其实不然，对于spider来说，这完全就是两个网页。登录google的webmaster就一目了然了，google允许你选择一个prefer的网页，不过更推荐使用301redirect的方式。
 

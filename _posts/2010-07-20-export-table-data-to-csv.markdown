@@ -2,7 +2,7 @@
 layout: post
 title: 将table的数据导出为csv
 categories:
-- Rails
+- rails
 ---
 项目中经常会有这样的usecase，把一个table中的数据导出为csv，用fastercsv这个gem可以快速完成这个功能。
 

@@ -2,7 +2,7 @@
 layout: post
 title: Annotate models
 categories:
-- Rails Plugins
+- rails plugins
 ---
 Rails的约定优于配置和Ruby的动态性，使得model类变得十分简洁，但是也带来了一个问题：如果你想知道一个model有哪些属性时，必须去查看数据库或者migration，这给开发带来了极大的不便。Annotate models插件很好地解决了这个问题，它在model类的起始处以注释的形式写明了所有的属性，下面来看个例子：
 

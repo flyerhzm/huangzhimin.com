@@ -2,8 +2,8 @@
 layout: post
 title: ActiveRecord destroy之后的事情
 categories:
-- Rails
-- ActiveRecord
+- rails
+- activerecord
 ---
 一般的Rails应用都在对象destroy之后自动跳转到另一个页面，不再去关心被destroy的对象如何了。其实被destroy的对象虽然从数据库中被删除了，但仍然存在于内存当中。
 

@@ -2,9 +2,9 @@
 layout: post
 title: contact-list类库依赖包之commons-httpclient
 categories:
-- Java
+- java
 - contact-list
-- HTTP
+- http
 ---
 commons-httpclient是apache下的一个开源项目，提供了一个纯java实现的http客户端，使用它可以很方便发送HTTP请求，接受HTTP应答，自动管理Cookie等等。
 

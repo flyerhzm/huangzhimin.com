@@ -2,7 +2,7 @@
 layout: post
 title: rails的异常处理
 categories:
-- Rails
+- rails
 ---
 当在本地开发模式下发生异常的时候，rails会将错误发生的点、错误桟以及请求和应答的内容显示在浏览器上，并且在console下面打印出错误桟，这些使得调试web应用变得更容易。那rails内部是如何处理异常的呢？
 

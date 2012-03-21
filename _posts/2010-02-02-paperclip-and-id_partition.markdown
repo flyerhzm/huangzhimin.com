@@ -2,7 +2,7 @@
 layout: post
 title: paperclip和id_partition
 categories:
-- Rails
+- rails
 ---
 很多网站都允许用户上传文件，如何管理这些上传的文件呢？以paperclip为例，其默认文件布局结构为
 

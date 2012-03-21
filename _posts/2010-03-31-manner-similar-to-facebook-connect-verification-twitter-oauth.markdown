@@ -2,8 +2,8 @@
 layout: post
 title: 类似facebook connect的方式验证twitter oauth
 categories:
-- Rails
-- Twitter
+- rails
+- twitter
 - javascript
 ---
 最近一个项目需要实现类似与uservoice一样的widget，也就是把一段javascript放到任何的网站上，然后动态生成一个iframe来显示我们网站的内容。但是碰到一个问题，在这个widget内需要允许用户使用twiiter oauth的方式登录，但是twitter oauth认证之后会使用window.top来redirect你的页面，这样会重置我们的widget，这显然是对用户很不友好的。同时，我发现facebook connect的方式可以很好的应用在我们的widget上面，因为它不会重新刷新页面。于是我想能不能用类似与facebook connet的方式，弹出一个页面来做twitter oauth的身份验证呢？显然，这是可行的。

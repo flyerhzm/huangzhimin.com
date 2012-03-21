@@ -4,7 +4,7 @@ title: contact-list类库依赖包之msnmlib
 categories:
 - contact-list
 - msn
-- Java
+- java
 ---
 msnmlib是韩国人写的一个msn的java客户端，提供了完整的api，很好用的，唯一的缺陷就是javadoc使用韩文写的，看不懂。
 

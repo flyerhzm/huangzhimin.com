@@ -2,10 +2,10 @@
 layout: post
 title: 在google app engine上做代理服务(for crawler)
 categories:
-- Java
-- GAE
-- Ruby
-- HTTP
+- java
+- gae
+- ruby
+- http
 ---
 本来是想在GAE上做一个完整的代理服务器的，结果发现不可行，好像当HTTP的URL和HOST不匹配的时候，GAE就会把你拦截。怪不得GAE上找到的代理服务器都必须安装客户端或者是网页式的呢。
 

@@ -2,7 +2,7 @@
 layout: post
 title: 给ImageSwitcher增加键盘响应
 categories:
-- Android
+- android
 ---
 网上关于ImageSwitcher的例子都是通过Gallery来切换图片的。
 

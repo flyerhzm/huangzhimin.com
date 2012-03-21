@@ -2,7 +2,7 @@
 layout: post
 title: Rails2.3.3新功能──touch
 categories:
-- Rails
+- rails
 ---
 touch是Rails2.3.3引入的新功能，可以将指定的attributes改为当前时间，默认是更改updated_at或updated_on。
 

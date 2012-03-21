@@ -2,9 +2,9 @@
 layout: post
 title: oauth for twitter
 categories:
-- RubyGems
-- Twitter
-- Ruby
+- rubygems
+- twitter
+- ruby
 ---
 [twitter][1]是Twitter的ruby gem，它提供了两种身份验证的方法，一是oauth，二是http auth。http auth非常简单，只要提供账号和密码就可以了，而oauth就稍微复杂一些了。
 

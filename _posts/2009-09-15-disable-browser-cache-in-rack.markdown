@@ -2,9 +2,9 @@
 layout: post
 title: disable browser cache in rack
 categories:
-- Rails
-- Rack
-- HTTP
+- rails
+- rack
+- http
 ---
 bullet插件在浏览器cache下总是会问题，因为页面被cache了，总是返回304 Not Modified，bulletware下的代码没有执行就直接跳过了。
 

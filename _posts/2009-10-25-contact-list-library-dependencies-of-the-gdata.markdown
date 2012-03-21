@@ -3,7 +3,7 @@ layout: post
 title: contact-list类库依赖包之gdata
 categories:
 - contact-list
-- Java
+- java
 ---
 gdata是google提供的获取其数据的api，analytics, calender, contacts, webmastertools, youtube等等。
 
