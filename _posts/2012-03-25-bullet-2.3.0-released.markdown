@@ -1,0 +1,96 @@
+---
+layout: post
+title: bullet 2.3.0 released
+categories:
+- rails
+- activerecord
+- bullet
+---
+[bullet][1] is a gem to help you increase your application's performance
+by reducing the number of sql reuqests it makes. Today I released bullet
+2.3.0 to better support rails 3.1 and 3.2 and performance improved. It's
+a long time I didn't do any changes to bullet, let me tell you the story
+I work for bullet 2.3.0.
+
+At the beginning of this month, bullet got its 1000th watcher on github,
+I realized it's time to improve it e.g. speed up and compatible with
+edge rails.
+
+The first thing I did is to refactor tests. Before I created several
+rspec tests, but they are more like integration tests instead of unit
+tests, so I move them to spec/integration/ directory. Then I added a
+bunch of test units to cover all codes, which can promise the
+correctness of further code refactors. I also use [guard][2] instead of
+watchr to do auto tests, why I preferred guard? It's much easier and has
+more extensions, like guard-rspec.
+
+Then I moved AR models, which are used for integration tests, from
+integration tests to spec/models, and I also moved db connection, db
+schema and db seed to spec/support/, moved test helpers to spec/support/
+as well. Now my tests looks much cleaner and run much faster (only
+connect db once).
+
+After refactoring tests, I tried to improve the bullet performance, I
+already created a [benchmark script][3] before, bullet 2.2.1 with rails
+3.0.12 spent 30s to complete
+
+{% highlight text %}
+bullet 2.2.1 with rails 3.0.12
+                                                                             user     system      total        real
+Querying & Iterating 1000 Posts with 10000 Comments and 100 Users       29.970000   0.270000  30.240000 ( 30.452083)
+{% endhighlight %}
+
+Then I used perftools.rb to measure cpu time for methods, the result is
+[here]:[4], as you seen, the top 3 time consume methods are
+garbage_collector, String#=~ and Kernel#caller
+
+1. garbage_collector, it depends on how many objects allocated
+2. String#=~, bullet use regexp to check if caller contains load_target
+3. Kernel#caller, bullet uses caller to tell what codes caused n+1 query
+
+I found the easiest is to mitigate String#=~, as bullet only check
+regexp with constant string load_target, so I simply used
+.include?("load_target") instead.
+
+{% highlight text %}
+bullet 2.3.0 with rails 3.0.12
+                                                                             user     system      total        real
+Querying & Iterating 1000 Posts with 10000 Comments and 100 Users       26.120000   0.430000  26.550000 ( 27.179304)
+{% endhighlight %}
+
+another change is to store object's ar_key instead of object itself.
+
+{% highlight text %}
+{<#Post id:1, title:"post1", body:"post body", created_at:..., updated_at:...> => [:comments]}
+{% endhighlight %}
+
+to
+
+{% highlight text %}
+{"Post:1" => [:comments]}
+{% endhighlight %}
+
+it speeds up hash comparison time and save the hash size.
+
+I also hacked ActiveRecord::Associations::SingularAssociation#reader
+instead of ActiveRecord::Associations::Association#load_target for rails
+3.1 and 3.2, it fixes activerecord 3.1 and 3.2 compatibility, there is
+no need to call caller in Association#load_target, it runs much faster
+in rails 3.1 and 3.2, the following is the benchmark result
+
+{% highlight text %}
+bullet 2.3.0 with rails 3.2.2
+                                                                             user     system      total        real
+Querying & Iterating 1000 Posts with 10000 Comments and 100 Users       16.460000   0.190000  16.650000 ( 16.968246)
+
+bullet 2.3.0 with rails 3.1.4
+                                                                             user     system      total        real
+Querying & Iterating 1000 Posts with 10000 Comments and 100 Users       14.600000   0.130000  14.730000 ( 14.937590)
+{% endhighlight %}
+
+Enjoy the new bullet gem!
+
+[1]:https://github.com/flyerhzm/bullet
+[2]:https://github.com/guard/guard
+[3]:https://github.com/flyerhzm/bullet/blob/master/perf/benchmark.rb
+[4]:https://gist.github.com/2193236
