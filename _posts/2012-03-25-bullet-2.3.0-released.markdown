@@ -7,7 +7,7 @@ categories:
 - bullet
 ---
 [bullet][1] is a gem to help you increase your application's performance
-by reducing the number of sql reuqests it makes. Today I released bullet
+by reducing the number of sql requests it makes. Today I released bullet
 2.3.0 to better support rails 3.1 and 3.2 and performance improved. It's
 a long time I didn't do any changes to bullet, let me tell you the story
 I work for bullet 2.3.0.
