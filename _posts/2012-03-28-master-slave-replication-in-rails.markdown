@@ -18,7 +18,7 @@ it's scalable, that means you can easily increase you db read throughput
 by adding more slave dbs. It also allows you to move some tasks like
 analytics on slave db without affecting your master db.
 
-### Gems in rails ###
+### Replication in rails ###
 How do we config master slave replication in rails app? There are a lot
 of [choices][1], pick up one and setup according to its document. I
 don't want to discuss about these tools here, I will tell you how to use
@@ -59,7 +59,7 @@ COMMIT
 
 In the following cases I will send reads to master db as well
 
-1. queries in background job, like delayed_job, resque, workling, etc.
+* queries in background job, like delayed_job, resque, workling, etc.
 
 {% highlight ruby %}
 clas Post < ActiveRecord::Base
@@ -82,7 +82,7 @@ end
 It's probably the post does not exist when reading it from slave db in
 background job.
 
-2. queries in the request which follows a redirect reponse
+* queries in the request which follows a redirect reponse
 
 {% highlight ruby %}
 class PostsController < ApplicationController
@@ -139,5 +139,8 @@ end
 force_master? is a convenient way to manage your master/slave db on
 controller levels, you can also enable/disalbe master/slave for some
 specfied requests.
+
+Finally test your application and add ActiveRecord::Base.with_mater {}
+if necessary.
 
 [1]:https://www.ruby-toolbox.com/categories/Active_Record_Sharding
