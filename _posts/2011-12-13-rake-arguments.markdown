@@ -30,6 +30,17 @@ end
 rake try_argument[xxx, yyy]
 {% endhighlight %}
 
+and if there is dependent task, you should define it like
+
+{% highlight ruby %}
+task :try_argument, [:key1, :key2] => :environment do |t, args|
+  args.with_defaults(:key1 => value1, :key2 => value2)
+  args[:key1] or args[:key2]
+end
+
+rake try_argument[xxx, yyy]
+{% endhighlight %}
+
 It looks like the difference between hash arguments and normal arguments.
 
 Both of them have disadvantage:
