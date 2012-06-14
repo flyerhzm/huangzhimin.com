@@ -22,7 +22,8 @@ newrelic's help, we are the official support for newrelic workling, feel
 free to ping us if you have any question. The following is the
 screenshot for the workling instrument on newrelic.
 
-![workling instrument](http://flic.kr/p/bWZWc4)
+![workling
+instrument](http://farm8.staticflickr.com/7094/7185962145_55cf2790f0.jpg)
 
 [1]:"https://github.com/purzelrakete/workling"
 [2]:"http://www.rabbitmq.com/"
