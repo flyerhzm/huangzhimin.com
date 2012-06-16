@@ -88,4 +88,4 @@ class ExceptionNotifier
 end
 {%endhighlight%}
 
-[1]:https://github.com/flyerhzm/multiple_mailers
+[1]: https://github.com/flyerhzm/multiple_mailers

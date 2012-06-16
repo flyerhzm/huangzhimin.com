@@ -143,4 +143,4 @@ specfied requests.
 Finally test your application and add ActiveRecord::Base.with_mater {}
 if necessary.
 
-[1]:https://www.ruby-toolbox.com/categories/Active_Record_Sharding
+[1]: https://www.ruby-toolbox.com/categories/Active_Record_Sharding

@@ -90,7 +90,7 @@ Querying & Iterating 1000 Posts with 10000 Comments and 100 Users       14.60000
 
 Enjoy the new [bullet][1] gem!
 
-[1]:https://github.com/flyerhzm/bullet
-[2]:https://github.com/guard/guard
-[3]:https://github.com/flyerhzm/bullet/blob/master/perf/benchmark.rb
-[4]:https://gist.github.com/2193236
+[1]: https://github.com/flyerhzm/bullet
+[2]: https://github.com/guard/guard
+[3]: https://github.com/flyerhzm/bullet/blob/master/perf/benchmark.rb
+[4]: https://gist.github.com/2193236

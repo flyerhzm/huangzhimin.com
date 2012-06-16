@@ -25,8 +25,8 @@ screenshot for the workling instrument on newrelic.
 ![workling
 instrument](http://farm8.staticflickr.com/7094/7185962145_55cf2790f0.jpg)
 
-[1]:"https://github.com/purzelrakete/workling"
-[2]:"http://www.rabbitmq.com/"
-[3]:"https://scoutapp.com/"
-[4]:"http://newrelic.com/"
-[5]:"https://github.com/aurorafeint/newrelic-workling"
+[1]: https://github.com/purzelrakete/workling
+[2]: http://www.rabbitmq.com/
+[3]: https://scoutapp.com/
+[4]: http://newrelic.com/
+[5]: https://github.com/aurorafeint/newrelic-workling

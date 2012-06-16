@@ -311,11 +311,11 @@ There is a problem, in disqus, email of comment author can't be empty, but in my
 
 Everything works well. I love my new blog system.
 
-  [1]:https://github.com/mojombo/jekyll
-  [2]:https://github.com/rfelix/jekyll_ext
-  [3]:https://github.com/rfelix/my_jekyll_extensions
-  [3]:https://github.com/flyerhzm/my_jekyll_extensions
-  [4]:http://disqus.com
-  [5]:https://github.com/xijo/reverse-markdown
-  [6]:https://gist.github.com/788039
-  [7]:https://github.com/flyerhzm.github.com
+  [1]: https://github.com/mojombo/jekyll
+  [2]: https://github.com/rfelix/jekyll_ext
+  [3]: https://github.com/rfelix/my_jekyll_extensions
+  [3]: https://github.com/flyerhzm/my_jekyll_extensions
+  [4]: http://disqus.com
+  [5]: https://github.com/xijo/reverse-markdown
+  [6]: https://gist.github.com/788039
+  [7]: https://github.com/flyerhzm.github.com
