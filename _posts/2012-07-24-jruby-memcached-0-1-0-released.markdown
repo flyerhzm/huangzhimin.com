@@ -38,7 +38,7 @@ which is faster than memcached-client, but after we deployed it on
 production, we found memcached misses jump too high which we can't
 afford, see
 
-![Memcached misses](http://flic.kr/p/cCHjt5)
+![Memcached misses](http://farm8.staticflickr.com/7128/7635380018_69f4cc5247.jpg)
 
 we have to revert the release.
 
@@ -85,36 +85,37 @@ hash and distribution algorithms are 100% compatible to libmemcached
 hacks I did for spymemcached.
 
 I mention a string issue above, it is when we passing a zlib deflated
-value, like "x\234c?P?*?/?I\001\000\b8\002a", it is "x?c?P?*?/?8a" in
-java, so we can't pass deflated string directly, instead we pass bytes.
+value, like "x\234c?P?*?/?I\001\000\b8\002a", it changes to
+"x?c?P?*?/?8a" in java, so we can't pass deflated string directly,
+instead we pass bytes.
 
 I also did some benchmark between memcached, jruby-memcached and dalli.
 
-in ruby-1.9.3
-                           user     system      total        real
-memcached set          1.110000   1.020000   2.130000 (  4.592509)
-memcached get          0.970000   1.000000   1.970000 (  4.172170)
-                           user     system      total        real
-dalli set              8.330000   1.560000   9.890000 ( 10.094499)
-dalli get              8.530000   1.680000  10.210000 ( 10.331083)
+    in ruby-1.9.3
+                               user     system      total        real
+    memcached set          1.110000   1.020000   2.130000 (  4.592509)
+    memcached get          0.970000   1.000000   1.970000 (  4.172170)
+                               user     system      total        real
+    dalli set              8.330000   1.560000   9.890000 ( 10.094499)
+    dalli get              8.530000   1.680000  10.210000 ( 10.331083)
 
-in jruby-1.6.7.2
-                          user     system      total        real
-jruby-memcached set   6.902000   0.000000   6.902000 (  6.902000)
-jruby-memcached get   6.845000   0.000000   6.845000 (  6.845000)
-                          user     system      total        real
-dalli set            13.251000   0.000000  13.251000 ( 13.251000)
-dalli get            13.536000   0.000000  13.536000 ( 13.536000)
+    in jruby-1.6.7.2
+                              user     system      total        real
+    jruby-memcached set   6.902000   0.000000   6.902000 (  6.902000)
+    jruby-memcached get   6.845000   0.000000   6.845000 (  6.845000)
+                              user     system      total        real
+    dalli set            13.251000   0.000000  13.251000 ( 13.251000)
+    dalli get            13.536000   0.000000  13.536000 ( 13.536000)
 
 see more [here][8], as you seen, both memcached and jruby-memcached are
 2x faster than dalli.
 
-[0]:"https://github.com/aurorafeint/jruby-memcached"
-[1]:"https://github.com/evan/memcached"
-[2]:"https://github.com/ikai/jruby-memcache-client"
-[3]:"https://github.com/mperham/dalli"
-[4]:"http://en.wikipedia.org/wiki/Consistent_hashing"
-[5]:"http://code.google.com/p/xmemcached/"
-[6]:"http://code.google.com/p/spymemcached/"
-[7]:"https://github.com/aurorafeint/jruby-memcached/tree/master/src/main/java"
-[8]:"https://github.com/aurorafeint/jruby-memcached/blob/master/benchmark.rb"
+[0]: https://github.com/aurorafeint/jruby-memcached
+[1]: https://github.com/evan/memcached
+[2]: https://github.com/ikai/jruby-memcache-client
+[3]: https://github.com/mperham/dalli
+[4]: http://en.wikipedia.org/wiki/Consistent_hashing
+[5]: http://code.google.com/p/xmemcached/
+[6]: http://code.google.com/p/spymemcached/
+[7]: https://github.com/aurorafeint/jruby-memcached/tree/master/src/main/java
+[8]: https://github.com/aurorafeint/jruby-memcached/blob/master/benchmark.rb
