@@ -833,6 +833,9 @@ h2.widget-title,
 #carrington-speaker{
   text-align:center;
 }
+#carrington-github{
+  text-align:center;
+}
 #carrington-archives ul {
 	border-top: 1px dotted #cecfd1;
 }

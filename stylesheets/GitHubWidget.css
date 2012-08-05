@@ -1,0 +1,1140 @@
+.githubwidget a {
+    color: #4183c4;
+    text-decoration: none;
+}
+
+.githubwidget a:hover {
+    text-decoration: underline;
+}
+
+.githubwidget a.mute {
+    color: #000;
+}
+
+.githubwidget a:active {
+    outline: none;
+}
+
+/* --------- start ---------- */
+
+.githubwidget {
+    font-size: 13px;
+    color: #333;
+}
+/*repository*/
+.githubwidget .repos {
+    margin: 0 0 10px 0;
+    border: solid #ddd 1px;
+    overflow: hidden;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+.githubwidget .reposname {
+    border-bottom: solid #eee 1px;
+    padding: 6px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+/*language watchers forks*/
+.githubwidget .reposstate {
+    float: right;
+    margin-right: 10px;
+    font-size: 11px;
+}
+.githubwidget .reposstate a{
+    color: #666;
+}
+.githubwidget .reposstate a:hover {
+    text-decoration: none;
+}
+/*repository body*/
+.githubwidget .reposbody {
+    font-size: 12px;
+    overflow: hidden;
+    padding: 5px 10px 5px 10px;
+    background: #FAFAFA;
+    background: -moz-linear-gradient(#FAFAFA,#EFEFEF);
+    background: -webkit-linear-gradient(#FAFAFA,#EFEFEF);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#efefef')";
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.githubwidget .reposbody .lastupdated {
+    margin: 3px 0 3px 0;
+    color: #888;
+    font-size: 11px;
+}
+/*homepage link*/
+.githubwidget .reposbody a {
+    white-space:nowrap;
+}
+
+.githubwidget .reposbody .minibutton {
+    float: right;
+}
+.githubwidget .minibutton:hover {
+    text-decoration: none;
+}
+
+.githubwidget .minibutton {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    color: #333;
+    font-family: Helvetica,arial,freesans,clean,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+    text-shadow: 0 1px 0 #fff;
+    white-space: nowrap;
+    border: 1px solid #d4d4d4;
+    border-bottom-color: #bcbcbc;
+    border-radius: 3px;
+    background: #fafafa;
+    background: -moz-linear-gradient(#fafafa,#eaeaea);
+    background: -webkit-linear-gradient(#fafafa,#eaeaea);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+/* ------------------------------- copy form github --------------------------------------------- */
+
+.githubwidget .minibutton.btn-admin .icon,
+.githubwidget .minibutton.btn-follow .icon,
+.githubwidget .minibutton.btn-unfollow .icon,
+.githubwidget .minibutton.btn-watch .icon,
+.githubwidget .minibutton.btn-unwatch .icon,
+.githubwidget .minibutton.btn-download .icon,
+.githubwidget .minibutton.btn-pull-request .icon,
+.githubwidget .minibutton.btn-fork .icon,
+.githubwidget .minibutton.btn-leave .icon,
+.githubwidget .minibutton.btn-compare .icon,
+.githubwidget .minibutton.btn-reply .icon,
+.githubwidget .minibutton.btn-back .icon,
+.githubwidget .minibutton.btn-forward .icon,
+.githubwidget .minibutton.btn-windows .icon,
+.githubwidget .minibutton.btn-mac .icon {
+    float: left;
+    margin-right: 6px;
+    font-family: 'Octicons Regular';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.githubwidget .minibutton.btn-admin .icon:before {
+    content: "\f044";
+}
+
+.githubwidget .minibutton.btn-follow .icon:before {
+    content: "\f01c";
+}
+
+.githubwidget .minibutton.btn-unfollow .icon:before {
+    content: "\f01b";
+}
+
+.githubwidget .minibutton.btn-watch .icon:before {
+    content: "\f01d";
+}
+
+.githubwidget .minibutton.btn-unwatch .icon:before {
+    content: "\f01e";
+}
+
+.githubwidget .minibutton.btn-download .icon:before {
+    content: "\f00b";
+}
+
+.githubwidget .minibutton.btn-pull-request .icon:before {
+    content: "\f022";
+}
+
+.githubwidget .minibutton.btn-fork .icon:before {
+    content: "\f020";
+}
+
+.githubwidget .minibutton.btn-leave .icon:before {
+    content: "\f032";
+}
+
+.githubwidget .minibutton.btn-compare .icon:before {
+    content: "\f04d";
+}
+
+.githubwidget .minibutton.btn-reply .icon:before {
+    content: "\f051";
+}
+
+.githubwidget .minibutton.btn-back .icon:before {
+    content: "\f040";
+}
+
+.githubwidget .minibutton.btn-forward .icon:before {
+    content: "\f03e";
+}
+
+.githubwidget .minibutton.btn-mac .icon:before {
+    content: "\f036";
+}
+
+@font-face {
+    font-family:'Octicons Regular';
+    src:url("GitHubWidget.eot")
+    format("embedded-opentype"),
+    url("GitHubWidget.woff")format("woff"),
+    url("GitHubWidget.ttf")format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+.githubwidget .mini-icon,.mega-icon {
+    font-family: 'Octicons Regular';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    line-height: 1.0;
+    -webkit-font-smoothing: antialiased;
+    -moz-transition: color .15s ease-in 0;
+    -webkit-transition: color .15s ease-in 0;
+}
+
+.githubwidget .mega-icon {
+    font-size: 32px;
+}
+
+.githubwidget .mega-icon.private-repo:before {
+    content: "\f200";
+}
+
+.githubwidget .mega-icon.public-repo:before {
+    content: "\f201";
+}
+
+.githubwidget .mega-icon.repo-forked:before {
+    content: "\f202";
+}
+
+.githubwidget .mega-icon.create:before {
+    content: "\f203";
+}
+
+.githubwidget .mega-icon.delete:before {
+    content: "\f204";
+}
+
+.githubwidget .mega-icon.push:before {
+    content: "\f205";
+}
+
+.githubwidget .mega-icon.pull:before {
+    content: "\f206";
+}
+
+.githubwidget .mega-icon.readme:before,.mega-icon.wiki:before {
+    content: "\f207";
+}
+
+.githubwidget .mega-icon.octocat:before {
+    content: "\f208";
+}
+
+.githubwidget .mega-icon.site-message:before,.mega-icon.blacktocat:before {
+    content: "\f209";
+}
+
+.githubwidget .mega-icon.invertocat:before {
+    content: "\f20a";
+}
+
+.githubwidget .mega-icon.download:before {
+    content: "\f20b";
+}
+
+.githubwidget .mega-icon.upload:before {
+    content: "\f20c";
+}
+
+.githubwidget .mega-icon.keyboard:before {
+    content: "\f20d";
+}
+
+.githubwidget .mega-icon.gist:before {
+    content: "\f20e";
+}
+
+.githubwidget .mega-icon.gist-private:before {
+    content: "\f20f";
+}
+
+.githubwidget .mega-icon.code-file:before,.mega-icon.download-unknown:before {
+    content: "\f210";
+}
+
+.githubwidget .mega-icon.download-text:before,.githubwidget .mega-icon.text-file:before {
+    content: "\f211";
+}
+
+.githubwidget .mega-icon.download-media:before {
+    content: "\f212";
+}
+
+.githubwidget .mega-icon.download-zip:before {
+    content: "\f213";
+}
+
+.githubwidget .mega-icon.download-pdf:before {
+    content: "\f214";
+}
+
+.githubwidget .mega-icon.download-tag:before {
+    content: "\f215";
+}
+
+.githubwidget .mega-icon.directory:before {
+    content: "\f216";
+}
+
+.githubwidget .mega-icon.submodule:before {
+    content: "\f217";
+}
+
+.githubwidget .mega-icon.person:before {
+    content: "\f218";
+}
+
+.githubwidget .mega-icon.team:before {
+    content: "\f219";
+}
+
+.githubwidget .mega-icon.member-added:before {
+    content: "\f21a";
+}
+
+.githubwidget .mega-icon.member-removed:before {
+    content: "\f21b";
+}
+
+.githubwidget .mega-icon.follow:before {
+    content: "\f21c";
+}
+
+.githubwidget .mega-icon.watching:before {
+    content: "\f21d";
+}
+
+.githubwidget .mega-icon.unwatch:before {
+    content: "\f21e";
+}
+
+.githubwidget .mega-icon.commit:before {
+    content: "\f21f";
+}
+
+.githubwidget .mega-icon.public-fork:before,.githubwidget .mega-icon.fork:before {
+    content: "\f220";
+}
+
+.githubwidget .mega-icon.private-fork:before {
+    content: "\f221";
+}
+
+.githubwidget .mega-icon.pull-request:before {
+    content: "\f222";
+}
+
+.githubwidget .mega-icon.merge:before {
+    content: "\f223";
+}
+
+.githubwidget .mega-icon.public-mirror:before {
+    content: "\f224";
+}
+
+.githubwidget .mega-icon.private-mirror:before {
+    content: "\f225";
+}
+
+.githubwidget .mega-icon.issue-opened:before {
+    content: "\f226";
+}
+
+.githubwidget .mega-icon.issue-reopened:before {
+    content: "\f227";
+}
+
+.githubwidget .mega-icon.issue-closed:before {
+    content: "\f228";
+}
+
+.githubwidget .mega-icon.issue-comment:before {
+    content: "\f229";
+}
+
+.githubwidget .mega-icon.star:before {
+    content: "\f22a";
+}
+
+.githubwidget .mega-icon.commit-comment:before {
+    content: "\f22b";
+}
+
+.githubwidget .mega-icon.help:before {
+    content: "\f22c";
+}
+
+.githubwidget .mega-icon.exclamation:before {
+    content: "\f22d";
+}
+
+.githubwidget .mega-icon.search-input:before {
+    content: "\f22e";
+}
+
+.githubwidget .mega-icon.advanced-search:before {
+    content: "\f22f";
+}
+
+.githubwidget .mega-icon.notifications:before {
+    content: "\f230";
+}
+
+.githubwidget .mega-icon.account-settings:before {
+    content: "\f231";
+}
+
+.githubwidget .mega-icon.logout:before {
+    content: "\f232";
+}
+
+.githubwidget .mega-icon.admin-tools:before {
+    content: "\f233";
+}
+
+.githubwidget .mega-icon.feed:before {
+    content: "\f234";
+}
+
+.githubwidget .mega-icon.apple:before {
+    content: "\f236";
+}
+
+.githubwidget .mega-icon.windows:before {
+    content: "\f237";
+}
+
+.githubwidget .mega-icon.ios:before {
+    content: "\f238";
+}
+
+.githubwidget .mega-icon.android:before {
+    content: "\f239";
+}
+
+.githubwidget .mega-icon.confirm:before {
+    content: "\f23a";
+}
+
+.githubwidget .mega-icon.unread-note:before {
+    content: "\f23b";
+}
+
+.githubwidget .mega-icon.read-note:before {
+    content: "\f23c";
+}
+
+.githubwidget .mega-icon.arr-up:before {
+    content: "\f23d";
+}
+
+.githubwidget .mega-icon.arr-right:before {
+    content: "\f23e";
+}
+
+.githubwidget .mega-icon.arr-down:before {
+    content: "\f23f";
+}
+
+.githubwidget .mega-icon.arr-left:before {
+    content: "\f240";
+}
+
+.githubwidget .mega-icon.pin:before {
+    content: "\f241";
+}
+
+.githubwidget .mega-icon.gift:before {
+    content: "\f242";
+}
+
+.githubwidget .mega-icon.graph:before {
+    content: "\f243";
+}
+
+.githubwidget .mega-icon.wrench:before {
+    content: "\f244";
+}
+
+.githubwidget .mega-icon.credit-card:before {
+    content: "\f245";
+}
+
+.githubwidget .mega-icon.time:before {
+    content: "\f246";
+}
+
+.githubwidget .mega-icon.ruby:before {
+    content: "\f247";
+}
+
+.githubwidget .mega-icon.podcast:before {
+    content: "\f248";
+}
+
+.githubwidget .mega-icon.key:before {
+    content: "\f249";
+}
+
+.githubwidget .mega-icon.force-push:before {
+    content: "\f24a";
+}
+
+.githubwidget .mega-icon.sync:before {
+    content: "\f24b";
+}
+
+.githubwidget .mega-icon.clone:before {
+    content: "\f24c";
+}
+
+.githubwidget .mega-icon.diff:before {
+    content: "\f24d";
+}
+
+.githubwidget .mega-icon.watchers:before {
+    content: "\f24e";
+}
+
+.githubwidget .mega-icon.discussion:before {
+    content: "\f24f";
+}
+
+.githubwidget .mega-icon.delete-note:before,.githubwidget .mega-icon.remove-close:before {
+    content: "\f250";
+}
+
+.githubwidget .mega-icon.reply:before {
+    content: "\f251";
+}
+
+.githubwidget .mega-icon.mail-status:before {
+    content: "\f252";
+}
+
+.githubwidget .mega-icon.block:before {
+    content: "\f253";
+}
+
+.githubwidget .mega-icon.tag-create:before {
+    content: "\f254";
+}
+
+.githubwidget .mega-icon.tab-delete:before {
+    content: "\f255";
+}
+
+.githubwidget .mega-icon.branch-create:before {
+    content: "\f256";
+}
+
+.githubwidget .mega-icon.branch-delete:before {
+    content: "\f257";
+}
+
+.githubwidget .mega-icon.edit:before {
+    content: "\f258";
+}
+
+.githubwidget .mega-icon.info:before {
+    content: "\f259";
+}
+
+.githubwidget .mega-icon.arr-collapsed:before {
+    content: "\f25a";
+}
+
+.githubwidget .mega-icon.arr-expanded:before {
+    content: "\f25b";
+}
+
+.githubwidget .mega-icon.link:before {
+    content: "\f25c";
+}
+
+.githubwidget .mega-icon.add:before {
+    content: "\f25d";
+}
+
+.githubwidget .mega-icon.reorder:before {
+    content: "\f25e";
+}
+
+.githubwidget .mega-icon.code:before {
+    content: "\f25f";
+}
+
+.githubwidget .mega-icon.location:before {
+    content: "\f260";
+}
+
+.githubwidget .mega-icon.u-list:before {
+    content: "\f261";
+}
+
+.githubwidget .mega-icon.o-list:before {
+    content: "\f262";
+}
+
+.githubwidget .mega-icon.quotemark:before {
+    content: "\f263";
+}
+
+.githubwidget .mega-icon.version:before {
+    content: "\f264";
+}
+
+.githubwidget .mega-icon.brightness:before {
+    content: "\f265";
+}
+
+.githubwidget .mega-icon.fullscreen:before {
+    content: "\f266";
+}
+
+.githubwidget .mega-icon.normalscreen:before {
+    content: "\f267";
+}
+
+.githubwidget .mega-icon.calendar:before {
+    content: "\f268";
+}
+
+.githubwidget .mega-icon.beer:before {
+    content: "\f269";
+}
+
+.githubwidget .mega-icon.lock:before,.githubwidget .mega-icon.secure:before {
+    content: "\f26a";
+}
+
+.githubwidget .mega-icon.added:before {
+    content: "\f26b";
+}
+
+.githubwidget .mega-icon.removed:before {
+    content: "\f26c";
+}
+
+.githubwidget .mega-icon.modified:before {
+    content: "\f26d";
+}
+
+.githubwidget .mega-icon.moved:before,.githubwidget .mega-icon.renamed:before {
+    content: "\f26e";
+}
+
+.githubwidget .mega-icon.add-comment:before {
+    content: "\f26f";
+}
+
+.githubwidget .mega-icon.horizontal-rule:before {
+    content: "\f270";
+}
+
+.githubwidget .mega-icon.arr-right-mini:before {
+    content: "\f271";
+}
+
+.githubwidget .mega-icon.jump-down:before {
+    content: "\f272";
+}
+
+.githubwidget .mega-icon.jump-up:before {
+    content: "\f273";
+}
+
+.githubwidget .mini-icon {
+    font-size: 16px;
+}
+
+.githubwidget .mini-icon.private-repo:before {
+    content: "\f000";
+}
+
+.githubwidget .mini-icon.public-repo:before {
+    content: "\f001";
+}
+
+.githubwidget .mini-icon.repo-forked:before {
+    content: "\f002";
+}
+
+.githubwidget .mini-icon.create:before {
+    content: "\f003";
+}
+
+.githubwidget .mini-icon.delete:before {
+    content: "\f004";
+}
+
+.githubwidget .mini-icon.push:before {
+    content: "\f005";
+}
+
+.githubwidget .mini-icon.pull:before {
+    content: "\f006";
+}
+
+.githubwidget .mini-icon.readme:before,.githubwidget .mini-icon.wiki:before {
+    content: "\f007";
+}
+
+.githubwidget .mini-icon.octocat:before {
+    content: "\f008";
+}
+
+.githubwidget .mini-icon.site-message:before,.githubwidget .mini-icon.blacktocat:before {
+    content: "\f009";
+}
+
+.githubwidget .mini-icon.invertocat:before {
+    content: "\f00a";
+}
+
+.githubwidget .mini-icon.download:before {
+    content: "\f00b";
+}
+
+.githubwidget .mini-icon.upload:before {
+    content: "\f00c";
+}
+
+.githubwidget .mini-icon.keyboard:before {
+    content: "\f00d";
+}
+
+.githubwidget .mini-icon.gist:before {
+    content: "\f00e";
+}
+
+.githubwidget .mini-icon.gist-private:before {
+    content: "\f00f";
+}
+
+.githubwidget .mini-icon.code-file:before,.githubwidget .mini-icon.download-unknown:before {
+    content: "\f010";
+}
+
+.githubwidget .mini-icon.download-text:before,.githubwidget .mini-icon.text-file:before {
+    content: "\f011";
+}
+
+.githubwidget .mini-icon.download-media:before {
+    content: "\f012";
+}
+
+.githubwidget .mini-icon.download-zip:before {
+    content: "\f013";
+}
+
+.githubwidget .mini-icon.download-pdf:before {
+    content: "\f014";
+}
+
+.githubwidget .mini-icon.download-tag:before {
+    content: "\f015";
+}
+
+.githubwidget .mini-icon.directory:before {
+    content: "\f016";
+}
+
+.githubwidget .mini-icon.submodule:before {
+    content: "\f017";
+}
+
+.githubwidget .mini-icon.person:before {
+    content: "\f018";
+}
+
+.githubwidget .mini-icon.team:before {
+    content: "\f019";
+}
+
+.githubwidget .mini-icon.member-added:before {
+    content: "\f01a";
+}
+
+.githubwidget .mini-icon.member-removed:before {
+    content: "\f01b";
+}
+
+.githubwidget .mini-icon.follow:before {
+    content: "\f01c";
+}
+
+.githubwidget .mini-icon.watching:before {
+    content: "\f01d";
+}
+
+.githubwidget .mini-icon.unwatch:before {
+    content: "\f01e";
+}
+
+.githubwidget .mini-icon.commit:before {
+    content: "\f01f";
+}
+
+.githubwidget .mini-icon.public-fork:before,.githubwidget .mini-icon.fork:before {
+    content: "\f020";
+}
+
+.githubwidget .mini-icon.private-fork:before {
+    content: "\f021";
+}
+
+.githubwidget .mini-icon.pull-request:before {
+    content: "\f022";
+}
+
+.githubwidget .mini-icon.merge:before {
+    content: "\f023";
+}
+
+.githubwidget .mini-icon.public-mirror:before {
+    content: "\f024";
+}
+
+.githubwidget .mini-icon.private-mirror:before {
+    content: "\f025";
+}
+
+.githubwidget .mini-icon.issue-opened:before {
+    content: "\f026";
+}
+
+.githubwidget .mini-icon.issue-reopened:before {
+    content: "\f027";
+}
+
+.githubwidget .mini-icon.issue-closed:before {
+    content: "\f028";
+}
+
+.githubwidget .mini-icon.issue-comment:before {
+    content: "\f029";
+}
+
+.githubwidget .mini-icon.star:before {
+    content: "\f02a";
+}
+
+.githubwidget .mini-icon.commit-comment:before {
+    content: "\f02b";
+}
+
+.githubwidget .mini-icon.help:before {
+    content: "\f02c";
+}
+
+.githubwidget .mini-icon.exclamation:before {
+    content: "\f02d";
+}
+
+.githubwidget .mini-icon.search-input:before {
+    content: "\f02e";
+}
+
+.githubwidget .mini-icon.advanced-search:before {
+    content: "\f02f";
+}
+
+.githubwidget .mini-icon.notifications:before {
+    content: "\f030";
+}
+
+.githubwidget .mini-icon.account-settings:before {
+    content: "\f031";
+}
+
+.githubwidget .mini-icon.logout:before {
+    content: "\f032";
+}
+
+.githubwidget .mini-icon.admin-tools:before {
+    content: "\f033";
+}
+
+.githubwidget .mini-icon.feed:before {
+    content: "\f034";
+}
+
+.githubwidget .mini-icon.apple:before {
+    content: "\f036";
+}
+
+.githubwidget .mini-icon.windows:before {
+    content: "\f037";
+}
+
+.githubwidget .mini-icon.ios:before {
+    content: "\f038";
+}
+
+.githubwidget .mini-icon.android:before {
+    content: "\f039";
+}
+
+.githubwidget .mini-icon.confirm:before {
+    content: "\f03a";
+}
+
+.githubwidget .mini-icon.unread-note:before {
+    content: "\f03b";
+}
+
+.githubwidget .mini-icon.read-note:before {
+    content: "\f03c";
+}
+
+.githubwidget .mini-icon.arr-up:before {
+    content: "\f03d";
+}
+
+.githubwidget .mini-icon.arr-right:before {
+    content: "\f03e";
+}
+
+.githubwidget .mini-icon.arr-down:before {
+    content: "\f03f";
+}
+
+.githubwidget .mini-icon.arr-left:before {
+    content: "\f040";
+}
+
+.githubwidget .mini-icon.pin:before {
+    content: "\f041";
+}
+
+.githubwidget .mini-icon.gift:before {
+    content: "\f042";
+}
+
+.githubwidget .mini-icon.graph:before {
+    content: "\f043";
+}
+
+.githubwidget .mini-icon.wrench:before {
+    content: "\f044";
+}
+
+.githubwidget .mini-icon.credit-card:before {
+    content: "\f045";
+}
+
+.githubwidget .mini-icon.time:before {
+    content: "\f046";
+}
+
+.githubwidget .mini-icon.ruby:before {
+    content: "\f047";
+}
+
+.githubwidget .mini-icon.podcast:before {
+    content: "\f048";
+}
+
+.githubwidget .mini-icon.key:before {
+    content: "\f049";
+}
+
+.githubwidget .mini-icon.force-push:before {
+    content: "\f04a";
+}
+
+.githubwidget .mini-icon.sync:before {
+    content: "\f04b";
+}
+
+.githubwidget .mini-icon.clone:before {
+    content: "\f04c";
+}
+
+.githubwidget .mini-icon.diff:before {
+    content: "\f04d";
+}
+
+.githubwidget .mini-icon.watchers:before {
+    content: "\f04e";
+}
+
+.githubwidget .mini-icon.discussion:before {
+    content: "\f04f";
+}
+
+.githubwidget .mini-icon.delete-note:before,.githubwidget .mini-icon.remove-close:before {
+    content: "\f050";
+}
+
+.githubwidget .mini-icon.reply:before {
+    content: "\f051";
+}
+
+.githubwidget .mini-icon.mail-status:before {
+    content: "\f052";
+}
+
+.githubwidget .mini-icon.block:before {
+    content: "\f053";
+}
+
+.githubwidget .mini-icon.tag-create:before {
+    content: "\f054";
+}
+
+.githubwidget .mini-icon.tab-delete:before {
+    content: "\f055";
+}
+
+.githubwidget .mini-icon.branch-create:before {
+    content: "\f056";
+}
+
+.githubwidget .mini-icon.branch-delete:before {
+    content: "\f057";
+}
+
+.githubwidget .mini-icon.edit:before {
+    content: "\f058";
+}
+
+.githubwidget .mini-icon.info:before {
+    content: "\f059";
+}
+
+.githubwidget .mini-icon.arr-collapsed:before {
+    content: "\f05a";
+}
+
+.githubwidget .mini-icon.arr-expanded:before {
+    content: "\f05b";
+}
+
+.githubwidget .mini-icon.link:before {
+    content: "\f05c";
+}
+
+.githubwidget .mini-icon.add:before {
+    content: "\f05d";
+}
+
+.githubwidget .mini-icon.reorder:before {
+    content: "\f05e";
+}
+
+.githubwidget .mini-icon.code:before {
+    content: "\f05f";
+}
+
+.githubwidget .mini-icon.location:before {
+    content: "\f060";
+}
+
+.githubwidget .mini-icon.u-list:before {
+    content: "\f061";
+}
+
+.githubwidget .mini-icon.o-list:before {
+    content: "\f062";
+}
+
+.githubwidget .mini-icon.quotemark:before {
+    content: "\f063";
+}
+
+.githubwidget .mini-icon.version:before {
+    content: "\f064";
+}
+
+.githubwidget .mini-icon.brightness:before {
+    content: "\f065";
+}
+
+.githubwidget .mini-icon.fullscreen:before {
+    content: "\f066";
+}
+
+.githubwidget .mini-icon.normalscreen:before {
+    content: "\f067";
+}
+
+.githubwidget .mini-icon.calendar:before {
+    content: "\f068";
+}
+
+.githubwidget .mini-icon.beer:before {
+    content: "\f069";
+}
+
+.githubwidget .mini-icon.lock:before {
+    content: "\f06a";
+}
+
+.githubwidget .mini-icon.added:before {
+    content: "\f06b";
+}
+
+.githubwidget .mini-icon.removed:before {
+    content: "\f06c";
+}
+
+.githubwidget .mini-icon.modified:before {
+    content: "\f06d";
+}
+
+.githubwidget .mini-icon.moved:before,.githubwidget .mini-icon.renamed:before {
+    content: "\f06e";
+}
+
+.githubwidget .mini-icon.add-comment:before {
+    content: "\f06f";
+}
+
+.githubwidget .mini-icon.horizontal-rule:before {
+    content: "\f070";
+}
+
+.githubwidget .mini-icon.arr-right-mini:before {
+    content: "\f071";
+}
+
+.githubwidget .mini-icon.jump-down:before {
+    content: "\f072";
+}
+
+.githubwidget .mini-icon.jump-up:before {
+    content: "\f073";
+}
