@@ -91,21 +91,23 @@ instead we pass bytes.
 
 I also did some benchmark between memcached, jruby-memcached and dalli.
 
-    in ruby-1.9.3
-                               user     system      total        real
-    memcached set          1.110000   1.020000   2.130000 (  4.592509)
-    memcached get          0.970000   1.000000   1.970000 (  4.172170)
-                               user     system      total        real
-    dalli set              8.330000   1.560000   9.890000 ( 10.094499)
-    dalli get              8.530000   1.680000  10.210000 ( 10.331083)
+{% highlight bash %}
+in ruby-1.9.3
+                           user     system      total        real
+memcached set          1.110000   1.020000   2.130000 (  4.592509)
+memcached get          0.970000   1.000000   1.970000 (  4.172170)
+                           user     system      total        real
+dalli set              8.330000   1.560000   9.890000 ( 10.094499)
+dalli get              8.530000   1.680000  10.210000 ( 10.331083)
 
-    in jruby-1.6.7.2
-                              user     system      total        real
-    jruby-memcached set   6.902000   0.000000   6.902000 (  6.902000)
-    jruby-memcached get   6.845000   0.000000   6.845000 (  6.845000)
-                              user     system      total        real
-    dalli set            13.251000   0.000000  13.251000 ( 13.251000)
-    dalli get            13.536000   0.000000  13.536000 ( 13.536000)
+in jruby-1.6.7.2
+                          user     system      total        real
+jruby-memcached set   6.902000   0.000000   6.902000 (  6.902000)
+jruby-memcached get   6.845000   0.000000   6.845000 (  6.845000)
+                          user     system      total        real
+dalli set            13.251000   0.000000  13.251000 ( 13.251000)
+dalli get            13.536000   0.000000  13.536000 ( 13.536000)
+{% endhighlight %}
 
 see more [here][8], as you seen, both memcached and jruby-memcached are
 2x faster than dalli.
