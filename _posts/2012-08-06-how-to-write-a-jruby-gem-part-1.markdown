@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how to write a jruby gem - serial I
+title: how to write a jruby gem - part 1
 categories:
 - jruby
 - rubygems
