@@ -12,10 +12,16 @@ changes:
    jruby-head environment.
 2. update spymemcached to 2.8.3, which set shouldOptimize to false by
    default, there are some bugs with true shouldOptimize so far.
-3. add Memcached::ATimeoutOccurred error to handle timeout case.
-4. accept exception_retry_limit option.
-5. fix increment/decrement issue, < 0.5.0, incr/decr with unmarshal
+3. fix increment/decrement issue, in < 0.5.0, incr/decr with unmarshal
    encode while get with marshal decode.
+4. accept exception_retry_limit option.
+5. add Memcached::ATimeoutOccurred error to handle timeout case,
+   otherwise you will probably see following error.
+
+{% highlight ruby %}
+ActionView::TemplateError: undefined method `clean_message' for #<Java::NetSpyMemcached::OperationTimeoutException:0x26e02e71>
+{% endhighlight %}
+
 
 check out the full code changes [here][1].
 
