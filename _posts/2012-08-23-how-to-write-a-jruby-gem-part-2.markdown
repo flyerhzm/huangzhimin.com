@@ -249,7 +249,7 @@ ruby.newString("hello world");
 
 You can read the source code of [jruby-memcached][1] to get more
 information. Feel free to leave a comment if you have any question or
-sugestion.
+suggestion.
 
 [0]: http://huangzhimin.com/2012/08/06/how-to-write-a-jruby-gem-part-1/
 [1]: https://github.com/aurorafeint/jruby-memcached
