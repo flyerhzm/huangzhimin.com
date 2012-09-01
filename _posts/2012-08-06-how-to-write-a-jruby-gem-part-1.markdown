@@ -92,6 +92,9 @@ more details. This is the simplest solution to create jruby gem, in
 next post I will introduce you how to write a real jruby ext, which can
 improve the performance of your jruby gem.
 
+**Update**: I have written [part 2][3] for a real jruby ext, don't miss it.
+
 [0]: http://huangzhimin.com/2012/07/24/jruby-memcached-0-1-0-released/
 [1]: https://github.com/jruby/jruby/wiki/CallingJavaFromJRuby
 [2]: https://github.com/aurorafeint/jruby-memcached/tree/2adc85e8121229527a57a71f221fdade40de61df
+[3]: http://huangzhimin.com/2012/08/23/how-to-write-a-jruby-gem-part-2/
