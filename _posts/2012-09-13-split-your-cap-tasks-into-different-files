@@ -1,0 +1,10 @@
+---
+layout: post
+title: split your cap tasks into different files
+categories:
+- rails-bestpractices
+---
+This is my new post on rails-bestpractices. It tells how to split your cap
+tasks into different files to make your cap tasks maintainable and reusable.
+
+<http://rails-bestpractices.com/posts/698-split-your-cap-tasks-into-different-files>
