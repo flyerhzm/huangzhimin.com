@@ -101,4 +101,25 @@ don't need to add more servers, money saved. :-)
 So keep in mind, allocating less objects means less GC calls, also means
 better performance.
 
+**Updated**: [zip_ruby][1] gem gives a similar speed of shell zip command.
+
+{% highlight ruby %}
+require 'zipruby'
+GC::Profiler.enable
+before_stats = ObjectSpace.count_objects
+start = Time.now
+Zip::Archive.open("test.zip", Zip::CREATE) do |z|
+  Dir["**/*"].each do |file|
+    z.add_file file, file
+  end
+end
+puts "Total time: #{Time.now - start}"
+after_stats = ObjectSpace.count_objects
+puts "[GC Stats] #{before_stats[:FREE] - after_stats[:FREE]} new allocated objects."
+
+# Total time: 0.367729
+# [GC Stats] 1116 new allocated objects.
+{% endhighlight %}
+
 [0]: https://rubygems.org/gems/rubyzip
+[1]: https://rubygems.org/gems/zipruby
