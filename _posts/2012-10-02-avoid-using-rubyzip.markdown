@@ -94,8 +94,8 @@ end
 
 After deploying to background job server, I see a big performance
 improved, it takes only 218ms for webui job to finish, and only 28%
-time is taken by GC calls. The throughput is also increased from 22cpm
-to 32cpm, and it can keep up with the webui asyncrhonous messages, we
+time is taken by GC calls. The throughput is also increased from 44cpm
+to 64cpm, and it can keep up with the webui asyncrhonous messages, we
 don't need to add more servers, money saved. :-)
 
 So keep in mind, allocating less objects means less GC calls, also means
