@@ -24,7 +24,7 @@ I can also see the performance breakdown for each rake task.
 This rake task probably needs to use persistence net http or some c
 extension http client, and reduce the GC calls.
 
-**It's really important to monitor everything, then do optimization.**
+**It's really important to do monitor first, then do optimize.**
 
 
 [0]: https://github.com/aurorafeint/newrelic-workling
