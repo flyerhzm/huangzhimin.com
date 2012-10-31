@@ -2,7 +2,7 @@
 layout: post
 title: switch_user 0.9 released
 categories:
-- ruby
+- rubygems
 - switch_user
 ---
 [switch_user][0] provides a convenient way to switch current user that
