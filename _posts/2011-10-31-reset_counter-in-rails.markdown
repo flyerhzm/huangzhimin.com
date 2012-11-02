@@ -1,13 +1,13 @@
 ---
 layout: post
-title: reset_counter in rails
+title: reset_counters in rails
 categories:
 - rails
 ---
-I thought reset_counter method is to reset a counter_cache column to be
+I thought reset_counters method is to reset a counter_cache column to be
 0, but it is not. After trying several times, I finally realize that
-reset_counter is to update the value of counter_cache column to the
-exact count of associations. The usecase of reset_counter is when you
+reset_counters is to update the value of counter_cache column to the
+exact count of associations. The usecase of reset_counters is when you
 add the counter_cache in migration and update the counter_cache value,
 like
 
@@ -15,7 +15,7 @@ like
 def self.up
   add_column :posts, :comments_count
   Post.all.each do |post|
-    Post.reset_counter(post.id, :comments)
+    Post.reset_counters(post.id, :comments)
   end
 end
 {% endhighlight %}
