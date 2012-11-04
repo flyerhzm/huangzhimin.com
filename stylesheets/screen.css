@@ -848,6 +848,18 @@ h2.widget-title,
 	margin-left: 26px;
 }
 
+.referral {
+  margin-bottom: 10px;
+  clear: both;
+}
+.referral img {
+  float: left;
+  margin: 5px;
+}
+.referral a {
+  font-weight: bold;
+}
+
 /* Misc
 =================================== */
 
