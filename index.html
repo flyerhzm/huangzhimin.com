@@ -8,7 +8,8 @@ title: Richard Huang's Website
       <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
     </h1>
     <div class="entry-content full-content">
-      {{ post.content }}
+      {{ post.content | truncatehtml: 500 }}
+      <a href="{{ post.url }}" class="read_more">read more</a>
       <div class="clear"></div>
     </div>
     <p class="alt-font tight">

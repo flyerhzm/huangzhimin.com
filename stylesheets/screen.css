@@ -604,6 +604,9 @@ h1.page-title {
 	padding-top: 9px;
 	width: 550px;
 }
+.full .full-content .read_more {
+  float: right;
+}
 .full .pages-link,
 .page-numbers {
 	font-weight:bold;

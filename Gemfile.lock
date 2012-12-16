@@ -14,6 +14,7 @@ GEM
     liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
+    nokogiri (1.5.5)
     rdiscount (1.6.8)
     syntax (1.0.0)
 
@@ -24,4 +25,5 @@ DEPENDENCIES
   jekyll (= 0.10.0)
   jekyll_ext
   liquid (= 2.2.2)
+  nokogiri
   rdiscount
