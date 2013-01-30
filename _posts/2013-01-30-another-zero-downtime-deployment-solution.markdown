@@ -4,7 +4,7 @@ title: another zero downtime deployment solution
 categories:
 - deployment
 ---
-I wrote [a post][1] for jruby migration 2 monthes ago, it mentioned a
+I wrote [a post][0] for jruby migration 2 monthes ago, it mentioned a
 solution to do zero downtime deployment: pull out server out of load
 balancers, restart server, and then put in the server. It works but has
 some cons
