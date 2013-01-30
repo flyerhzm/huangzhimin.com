@@ -525,6 +525,10 @@ h1.page-title {
 	padding:14px;
 	width: 358px;
 }
+#sidebar .gravatar {
+  float:left;
+  margin-right:10px;
+}
 #sidebar #primary-sidebar,
 #sidebar #secondary-sidebar {
 	float:left;
