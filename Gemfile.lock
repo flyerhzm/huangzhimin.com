@@ -1,29 +1,46 @@
+GIT
+  remote: git://github.com/1syo/jekyll-speakerdeck.git
+  revision: 3c637d06e7c8f92f991efee5445c3d1acc58a8de
+  specs:
+    jekyll-speakerdeck (0.0.1)
+      jekyll (~> 0.12.0)
+      liquid (~> 2.3.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
-    directory_watcher (1.4.1)
-    fast-stemmer (1.0.0)
-    jekyll (0.10.0)
-      classifier (>= 1.3.1)
-      directory_watcher (>= 1.1.1)
-      liquid (>= 1.9.0)
-      maruku (>= 0.5.9)
+    directory_watcher (1.5.1)
+    fast-stemmer (1.0.2)
+    jekyll (0.12.1)
+      classifier (~> 1.3)
+      directory_watcher (~> 1.1)
+      kramdown (~> 0.14)
+      liquid (~> 2.3)
+      maruku (~> 0.5)
+      pygments.rb (~> 0.3.2)
     jekyll_ext (0.1.4)
-    liquid (2.2.2)
-    maruku (0.6.0)
+    kramdown (0.14.2)
+    liquid (2.3.0)
+    maruku (0.6.1)
       syntax (>= 1.0.0)
-    nokogiri (1.5.5)
-    rdiscount (1.6.8)
+    nokogiri (1.5.10)
+    posix-spawn (0.3.6)
+    pygments.rb (0.3.7)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
+    rdiscount (2.1.6)
     syntax (1.0.0)
+    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 0.10.0)
+  jekyll
+  jekyll-speakerdeck!
   jekyll_ext
-  liquid (= 2.2.2)
+  liquid
   nokogiri
   rdiscount

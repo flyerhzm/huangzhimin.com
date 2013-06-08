@@ -2,6 +2,7 @@
 layout: post
 title: my presentation on railsconf 2012
 categories:
+- presentation
 - rails
 ---
 I attended and spoke at railsconf 2012 last week, the following is my

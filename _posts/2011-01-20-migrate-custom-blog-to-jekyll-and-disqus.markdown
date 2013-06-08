@@ -28,19 +28,19 @@ OK, let me show how to fix the above limitation with my forked extension.
 1\. category section on sidebar.
 
 {% highlight html %}
-{% literal %}
+{% raw %}
 <ul>
   {% for category in site.categories %}
   <li><a href="/categories/{{category | first}}">{{category | first}} ({{category | last | size }})</a></li>
   {% endfor %}
 </ul>
-{% endliteral %}
+{% endraw %}
 {% endhighlight %}
 
 2\. archive section on sidebar.
 
 {% highlight html %}
-{% literal %}
+{% raw %}
 <ul>
   {% for monthly_archive in site.monthly_archives reversed %}
   <li>
@@ -48,13 +48,13 @@ OK, let me show how to fix the above limitation with my forked extension.
   </li>
   {% endfor %}
 </ul>
-{% endliteral %}
+{% endraw %}
 {% endhighlight %}
 
 3\. category page, add a layout `category_index.html`
 
 {% highlight html %}
-{% literal %}
+{% raw %}
 ---
 layout: default
 ---
@@ -86,13 +86,13 @@ layout: default
   </li>
 {% endfor %}
 </ol>
-{% endliteral %}
+{% endraw %}
 {% endhighlight %}
 
 4\. monthly archive page, add a layout `archive_monthly.html`
 
 {% highlight html %}
-{% literal %}
+{% raw %}
 ---
 layout: default
 ---
@@ -125,7 +125,7 @@ layout: default
     {% endif %}
   {% endfor %}
 </ol>
-{% endliteral %}
+{% endraw %}
 {% endhighlight %}
 
 5\. comments, hmmm...it's impossible for jekyll to provide comments functionality, but I guess you know the web service [disqus][4] which provides an online comment system. You can get two javascripts after you creating an forum on disqus, one for posting/displaying comments, the other is to dispaly comments count for each post. The following is the javascript to post/display comments.
@@ -216,7 +216,7 @@ I'm a developer, so it's not too difficult for to migrate old data.
 
 **Migrate old posts**
 
-Like the common blog system, the old post is saved as html format. After working on several projects on github, I start to love markdown, so I decide to convert all the old html posts to markdown format. There is a project named [reverse-markdown][5] to do this job, I also forked it to handle code highlight (before I used syntaxhighlighter, now is `{% literal %}{% highlight language %}...{% endhighlight %}{% endliteral %}`), here is the [script][6].
+Like the common blog system, the old post is saved as html format. After working on several projects on github, I start to love markdown, so I decide to convert all the old html posts to markdown format. There is a project named [reverse-markdown][5] to do this job, I also forked it to handle code highlight (before I used syntaxhighlighter, now is `{% raw %}{% highlight language %}...{% endhighlight %}{% endraw %}`), here is the [script][6].
 
 Then I began to migrate old posts
 
