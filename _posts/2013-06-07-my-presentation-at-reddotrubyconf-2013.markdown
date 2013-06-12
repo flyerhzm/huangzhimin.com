@@ -5,7 +5,8 @@ categories:
 - presentation
 - ruby
 ---
-This is my presentation on reddotrubyconf 2013 with notes.
+This is my presentation on reddotrubyconf 2013 with notes, building
+asynchronous apis.
 
 {% speakerdeck cd157a80b1700130a9093242a473c411 %}
 
