@@ -7,8 +7,8 @@ categories:
 - s3
 ---
 I'm consulting on a rails project on heroku, it involves generating a
-large pdf for customer, so you must already guess it leads to 30s
-timeout on heroku.
+large pdf for customer, so you must already guess it led to 30s timeout
+on heroku.
 
 At first, I handled it with common sense, moving pdf render to a
 background job, in the client side, it polls the status of bj, if job is
