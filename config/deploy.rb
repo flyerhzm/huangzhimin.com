@@ -1,10 +1,10 @@
-set :application,       'blog.huangzhimin.com'
+set :application,       'huangzhimin.com'
 set :repository,        '_site'
 set :scm,               :none
 set :deploy_via,        :copy
 set :copy_compression,  :zip
 set :use_sudo,          false
-set :host,              'blog.huangzhimin.com'
+set :host,              'huangzhimin.com'
 set :keep_releases,     5
 
 role :web,  host
@@ -15,7 +15,7 @@ set :user,    'huangzhi'
 set :group,   user
 
 set(:dest) { Capistrano::CLI.ui.ask("Destination: ") }
-set :deploy_to, '/home/huangzhi/sites/blog.huangzhimin.com/production'
+set :deploy_to, '/home/huangzhi/sites/huangzhimin.com/production'
 
 before 'deploy:update', 'deploy:update_jekyll'
 
