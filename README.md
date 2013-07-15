@@ -7,4 +7,4 @@ Usage
 -----
 
     bundle install
-    bundle exec ejekyll serve
+    bundle exec ejekyll serve --watch
