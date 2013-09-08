@@ -1,0 +1,49 @@
+---
+layout: post
+title: mongoid 3.0.x not set relation properly
+categories:
+- ruby
+- mongoid
+---
+
+I was trying to fix [bullet][0] test failure with [mongoid][1] 3.0.23,
+the failed test is to test the 1-1 relationship as follows
+
+{% highlight ruby %}
+it "should detect non preload association" do
+  Mongoid::Company.all.each do |company|
+    company.address.name
+  end
+  ......
+end
+{% endhighlight %}
+
+After reading the logs, it generated 2 unexpected query
+
+{% highlight ruby %}
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_companies selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (196.5840ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_companies selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.8612ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_addresses selector={"$query"=>{"company_id"=>"522c78a4c41a6b019b000014"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (2.9750ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_companies selector={"$query"=>{"_id"=>"522c78a4c41a6b019b000014"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (1.2510ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_addresses selector={"$query"=>{"company_id"=>"522c78a4c41a6b019b000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.9012ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_companies selector={"$query"=>{"_id"=>"522c78a4c41a6b019b000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2601ms)
+{% endhighlight %}
+
+As you can see, every time it queries an address, it also queries a
+company, but it already queries all companies, how stupid it is! It is
+caused by Mongoid::Relations::Accessors#set_relation doesn't set
+properly. I don't want to explain the details here, but solution is
+simple, just update mongoid to 3.1.x. Here are the logs for the same
+test running on mongoid 3.1.4
+
+{% highlight ruby  %}
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_companies selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4551ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_companies selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3150ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_addresses selector={"$query"=>{"company_id"=>"522c7b8ec41a6b3712000014"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.8950ms)
+MOPED: 127.0.0.1:27017 QUERY        database=bullet collection=mongoid_addresses selector={"$query"=>{"company_id"=>"522c7b8ec41a6b3712000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5548ms)
+{% endhighlight %}
+
+Great, issue is solved.
+
+[0]: https://github.com/flyerhzm/bullet
+[1]: http://mongoid.org/en/mongoid/index.html
