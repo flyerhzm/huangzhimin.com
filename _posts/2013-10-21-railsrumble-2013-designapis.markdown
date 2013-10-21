@@ -6,7 +6,7 @@ categories:
 ---
 
 I took part in this railsrumble last weekend, my entry is
-[designapis.com][1].
+[designapis.com][1], vote it up [here][2].
 
 Why did I built it? It comes from my working experience, I worked on
 serveral projects that needs to design http apis for ios clients, as we
@@ -29,3 +29,4 @@ error responses like 404 and 422.
 Feel free to try it without registration and any feedback is welcome.
 
 [1]: http://designapis.com
+[2]: http://railsrumble.com/entries/182-designapis
