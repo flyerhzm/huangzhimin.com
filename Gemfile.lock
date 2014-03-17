@@ -7,7 +7,7 @@ GIT
       liquid (> 2.3.0)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     capistrano (2.15.5)
       highline

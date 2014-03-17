@@ -11,11 +11,11 @@ role :web,  host
 role :app,  host
 role :db,   host, :primary => true
 
-set :user,    'huangzhi'
+set :user,    'deploy'
 set :group,   user
 
 set(:dest) { Capistrano::CLI.ui.ask("Destination: ") }
-set :deploy_to, '/home/huangzhi/sites/huangzhimin.com/production'
+set :deploy_to, '/home/deploy/sites/huangzhimin.com/production'
 
 before 'deploy:update', 'deploy:update_jekyll'
 
