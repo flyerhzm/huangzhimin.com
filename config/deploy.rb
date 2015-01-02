@@ -10,7 +10,7 @@ set :keep_releases,     5
 set :user,    'deploy'
 set :group,   'deploy'
 
-set :deploy_to, '/home/deploy/sites/huangzhimi.com/production'
+set :deploy_to, '/home/deploy/sites/huangzhimin.com/production'
 
 namespace :deploy do
   task :update_jekyll do
