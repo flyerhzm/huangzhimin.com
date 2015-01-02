@@ -1,4 +1,0 @@
-paginate: 10
-pygments: true
-markdown: rdiscount
-permalink: /:year/:month/:day/:title/

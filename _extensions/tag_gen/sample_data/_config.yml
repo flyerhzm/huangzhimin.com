@@ -1,6 +1,0 @@
-# Change the dir the individual tag files are output to
-tag_dir: tag # Default is tags
-# Title to be used when generating the individual tag html files prefixed with tag name
-tag_title_prefix: "Tags &raquo; "
-# enable related_tags computing
-related_tags: true
