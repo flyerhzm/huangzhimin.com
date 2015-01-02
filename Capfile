@@ -1,4 +1,11 @@
-load 'deploy' if respond_to?(:namespace) # cap2 differentiator
-Dir['vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
+# Load DSL and set up stages
+require 'capistrano/setup'
 
-load 'config/deploy' # remove this line to skip loading any of the default tasks
+# Include default deployment tasks
+require 'capistrano/deploy'
+
+require 'capistrano/bundler'
+require 'capistrano/rvm'
+
+# Load custom tasks from `lib/capistrano/tasks' if you have any defined
+Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }

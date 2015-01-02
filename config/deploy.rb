@@ -1,32 +1,25 @@
+set :rvm_type, :user
+set :rvm_ruby_version, '2.2.0'
+
 set :application,       'huangzhimin.com'
-set :repository,        '_site'
-set :scm,               :none
-set :deploy_via,        :copy
-set :copy_compression,  :zip
+set :scm,               :git
+set :repo_url,          'git@github.com:flyerhzm/huangzhimin.com.git'
 set :use_sudo,          false
-set :host,              'huangzhimin.com'
 set :keep_releases,     5
 
-role :web,  host
-role :app,  host
-role :db,   host, :primary => true
-
 set :user,    'deploy'
-set :group,   user
+set :group,   'deploy'
 
-set(:dest) { Capistrano::CLI.ui.ask("Destination: ") }
-set :deploy_to, '/home/deploy/sites/huangzhimin.com/production'
-
-before 'deploy:update', 'deploy:update_jekyll'
+set :deploy_to, '/home/deploy/sites/blog.huangzhimin.com/production'
 
 namespace :deploy do
-  [:start, :stop, :restart, :finalize_update].each do |t|
-    desc "#{t} task is a no-op with jekyll"
-    task t, :roles => :app do ; end
-  end
-
-  desc 'Run jekyll to update site before uploading'
   task :update_jekyll do
-    %x(rm -rf _site/* && bundle exec ejekyll build)
+    on roles(:app) do
+      within "#{deploy_to}/current" do
+        execute :bundle, "exec jekyll build"
+      end
+    end
   end
 end
+
+after "deploy:symlink:release", "deploy:update_jekyll"
