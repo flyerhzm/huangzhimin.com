@@ -15,7 +15,7 @@ role :db,   'huangzhimin.com', :primary => true
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'huangzhimin.com', user: 'deploy', roles: %w{web app}
+server 'huangzhimin.com', user: 'deploy', roles: %w{web app}, port: 12222
 
 
 # Custom SSH Options
