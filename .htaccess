@@ -1,8 +1,0 @@
-Options -Indexes
-
-RewriteEngine On
-
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^huangzhimin.com [NC]
-RewriteRule ^(.*)$ http://www.huangzhimin.com/$1 [L,R=301]
-
