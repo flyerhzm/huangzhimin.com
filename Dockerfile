@@ -1,16 +1,10 @@
-FROM jekyll/builder
-
-WORKDIR /tmp
-ADD Gemfile /tmp/
-ADD Gemfile.lock /tmp/
+FROM ruby:3.1-alpine AS jekyll-builder
+RUN apk update && apk add build-base
+WORKDIR /app
+COPY Gemfile* /app/
 RUN bundle install
+COPY . /app
+RUN jekyll build
 
-FROM jekyll/jekyll
-
-VOLUME /src
-EXPOSE 4000
-
-WORKDIR /src
-RUN mkdir .jekyll-cache
-RUN mkdir _site
-ENTRYPOINT ["jekyll", "serve", "-H", "0.0.0.0"]
+FROM nginx:alpine
+COPY --from=jekyll-builder /app/_site /usr/share/nginx/html

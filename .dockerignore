@@ -1,3 +1,4 @@
+.gitignore
 .git/
 _site/**
 .jekyll-cache/
